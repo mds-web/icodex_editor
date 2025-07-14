@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pencarian File TreeView</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <style>
+      ::before,
+    ::after {
+      content: '';
+    }
+    *,
+    ::before,
+    ::after {
+    
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 1rem;
+    }
+    
+    
+    .search-box {
+      width: 100%;
+      padding: .375rem .5rem;
+      border:1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      border-radius: .5rem;
+      color: #9198a1;
+      
+    }
+    .search-box.sb-sm {
+      padding: .25rem .375rem;
+    }
+    
+    @scope (.search-box) {
+      :scope {
+        transition: border-color ease-in-out .25s;
+      }
+      .form-search {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        padding: .375rem .5rem;
+        outline:0;
+        color: inherit;
+        background-color: transparent;
+        
+      }
+      
+      .form-search::placeholder {
+        color: #9198a1;
+      }
+      
+     :scope:has(.form-search:focus)  {
+        border-color :var(--accent);
+      }
+
+     
+     .search-ic {
+       display: inline-flex;
+       border-right:1px solid var(--border-color);
+       width: 32px;
+       height: 24px;
+       padding-right: 6px;
+       color: inherit;
+     }
+    }
+
+    @scope (.search-box.sb-sm) {
+      :scope {
+        transition: border-color ease-in-out .25s;
+      }
+      .form-search {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        padding: .375rem .5rem;
+        outline:0;
+        color: inherit;
+        background-color: transparent;
+        
+      }
+      
+      .form-search::placeholder {
+        color: #9198a1;
+      }
+      
+     :scope:has(.form-search:focus)  {
+        border-color :var(--accent);
+      }
+
+     
+     .search-ic {
+       display: inline-flex;
+       border-right:1px solid var(--border-color);
+       width: 28px;
+       height: 24px;
+       padding-right: 6px;
+       color: inherit;
+     }
+    }
+
+
+@scope (.search-file-wrapper) {
+  :scope {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  #search-result {
+    padding: 1rem 0;
+  }
+  
+  #search-result li {
+    display: flex;
+    width: 100%;
+    padding: .375rem .5rem;
+    
+  }
+}
+
+
+.dropdown-box {
+  margin: 2rem 0;
+  
+}
+
+.dropdown-medium {
+  background-color: #161B22;
+  margin: 0;
+  padding: .625rem 0;
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  width: max-content;
+  border-radius:.5rem;
+  border:1px solid var(--border-color);
+}
+
+.dropdown-medium li svg {
+ color: #9198A1;
+ display: block;
+ width: 100%;
+}
+
+.dropdown-medium > * + * {
+  border-top: 1px solid var(--border-color);
+}
+.dropdown-medium li > .dropdown-item {
+  color: var(--fg-color);
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+
+.dropdown-medium li > .dropdown-item:hover {
+  background-color: var(--hover-bg);
+
+}
+
+.dropdown-medium li > .dropdown-item > span:has(svg) {
+  width: 1.125rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  margin-right: .5rem;
+}
+
+.dropdown-medium li > .dropdown-item > span.text {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+  </style>
+  
+</head>
+<link rel="stylesheet" href="src/bootstrap-icons.css" type="text/css" media="all" />
+<body>
+
+  <h2>Pencarian File</h2>
+
+
+
+ <!-- <ul class="dropdown-medium">
+    <li>
+      <a class="dropdown-item">
+        <span>
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M28 22v8H4v-8M16 4v20m-8-8l8 8l8-8" />
+</svg>          
+        </span>
+        <span class="text">Mengimport Berkas</span>
+      </a>
+      
+    </li>
+    
+        <li>
+      <a class="dropdown-item">
+        <span>
+<svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+	<path fill="currentColor" d="M9.126.64a1.75 1.75 0 0 1 1.75 0l8.25 4.762q.155.09.286.206a.75.75 0 0 1 .554.96q.035.17.035.35v3.332a.75.75 0 0 1-1.5 0V7.64l-7.75 4.474V22.36a.75.75 0 0 1-1.125.65l-8.75-5.052a1.75 1.75 0 0 1-.875-1.515V6.917q0-.179.035-.35a.75.75 0 0 1 .554-.96q.133-.117.286-.205zm.875 10.173l7.75-4.474l-7.625-4.402a.25.25 0 0 0-.25 0L2.251 6.34Zm-8.5-3.175v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z" stroke-width="0.5" stroke="currentColor" />
+	<path fill="currentColor" d="m16.617 17.5l2.895-2.702a.75.75 0 0 0-1.024-1.096l-4.285 4a.75.75 0 0 0 0 1.096l4.285 4a.75.75 0 1 0 1.024-1.096L16.617 19h6.633a.75.75 0 0 0 0-1.5z" stroke-width="0.5" stroke="currentColor" />
+</svg>         
+        </span>
+        <span class="text">Tambahkan Perpustakaan</span>
+      </a>
+      
+    </li>
+
+<li><a  class="dropdown-item">
+  <span><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 1024 1024">
+  <path fill="currentColor" d="M771.776 794.88A384 384 0 0 1 128 512h64a320 320 0 0 0 555.712 216.448H654.72a32 32 0 1 1 0-64h149.056a32 32 0 0 1 32 32v148.928a32 32 0 1 1-64 0v-50.56zM276.288 295.616h92.992a32 32 0 0 1 0 64H220.16a32 32 0 0 1-32-32V178.56a32 32 0 0 1 64 0v50.56A384 384 0 0 1 896.128 512h-64a320 320 0 0 0-555.776-216.384z" stroke-width="25.5" stroke="currentColor" />
+</svg></span>
+  <span class="text">Segarkan Berkas</span></a></li>
+  </ul>
+-->
+
+
+
+
+
+<div class="search-file-wrapper">
+  <div class="search-box sb-sm" tabindex="0">
+<span tabindex="0"  class="search-ic">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+</span>
+<input
+  class="form-search"
+  type="text"
+  placeholder="Ketik nama file..."
+  autocomplete="off"
+  autocorrect="off"
+  autocapitalize="none"
+  spellcheck="false"
+/>
+
+</div>
+
+<input type="text" id="searchInput">
+
+  <ul id="search-result"></ul>
+
+</div>
+<script>
+    // Data TreeView contoh
+    const treeData = [
+      {
+        type: 'folder',
+        name: 'src',
+        path: '/project/src',
+        children: [
+          {
+            type: 'folder',
+            name: 'components',
+            path: '/project/src/components',
+            children: [
+              { type: 'file', name: 'Button.js', path: '/project/src/components/Button.js' },
+              { type: 'file', name: 'Header.vue', path: '/project/src/components/Header.vue' }
+            ]
+          },
+          {
+            type: 'folder',
+            name: 'lib',
+            path: '/project/src/lib',
+            children: [
+              { type: 'file', name: 'math.js', path: '/project/src/lib/math.js' },
+              { type: 'file', name: 'dateUtil.js', path: '/project/src/lib/dateUtil.js' }
+            ]
+          },
+          { type: 'file', name: 'main.js', path: '/project/src/main.js' },
+          { type: 'file', name: 'app.css', path: '/project/src/app.css' }
+        ]
+      },
+      { type: 'file', name: 'README.md', path: '/project/README.md' },
+      { type: 'file', name: 'package.json', path: '/project/package.json' }
+    ];
+
+    // Fungsi pencarian dan highlight
+    function cariFileDenganHighlight(data, keyword) {
+      const hasil = [];
+      // Escape karakter regex khusus dari keyword
+const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const regex = new RegExp(escapedKeyword, 'gi');
+ // insensitive & global
+
+      function telusuri(nodes) {
+        for (const node of nodes) {
+          if (node.type === 'file' && regex.test(node.name)) {
+            const namaHighlight = node.name.replace(regex, match => `<mark>${match}</mark>`);
+            hasil.push({ name: namaHighlight, path: node.path });
+          } else if (node.type === 'folder' && Array.isArray(node.children)) {
+            telusuri(node.children);
+          }
+        }
+      }
+
+      telusuri(data);
+      return hasil;
+    }
+
+    // Tangani input pencarian
+    const input = document.getElementById('searchInput');
+    const hasilEl = document.getElementById('search-result');
+
+    input.addEventListener('input', () => {
+      const keyword = input.value.trim();
+      hasilEl.innerHTML = '';
+
+      if (!keyword) return;
+
+      const hasil = cariFileDenganHighlight(treeData, keyword);
+
+      for (const item of hasil) {
+        const li = document.createElement('li');
+        li.innerHTML = `${item.name} <span>(${item.path})</span>`;
+        hasilEl.appendChild(li);
+      }
+    });
+  </script>
+
+</body>
+</html>

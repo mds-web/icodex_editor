@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Proyek Random Ikon</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 16px;
+    }
+
+    .project-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #1e1e1e;
+      padding: 12px;
+      margin-bottom: 8px;
+      border-radius: 6px;
+    }
+
+    .project-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+    }
+
+    .project-name {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Daftar Proyek</h2>
+  <div id="project-list"></div>
+
+  <script>
+    // Contoh nama-nama proyek
+    const projects = [
+      "Full-revisi", "AA@AA", "icodex 1", "IcodexApp", "REG3X",
+      "IndexedDB", "nd", "app1", "Canvas", "File-Exploler", "MyProject99"
+    ];
+
+    // Fungsi bikin SVG dari nama (pakai innerHTML)
+    function getRandomIconSVG(name) {
+      let hash = 0;
+      for (let i = 0; i < name.length; i++) {
+        hash = name.charCodeAt(i) + ((hash << 5) - hash);
+      }
+
+      const hue = Math.abs(hash) % 360;
+      const color = `hsl(${hue}, 70%, 50%)`;
+      const shapes = ['circle', 'rect', 'polygon'];
+      const shape1 = shapes[Math.abs(hash) % shapes.length];
+      const shape2 = shapes[Math.abs(hash >> 3) % shapes.length];
+
+      let svg = `<svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg">`;
+
+      if (shape1 === "circle") svg += `<circle cx="50" cy="50" r="40" fill="${color}" />`;
+      if (shape1 === "rect")   svg += `<rect x="20" y="20" width="60" height="60" fill="${color}" />`;
+      if (shape1 === "polygon")svg += `<polygon points="50,10 90,90 10,90" fill="${color}" />`;
+
+      if (shape2 === "circle") svg += `<circle cx="30" cy="30" r="20" fill="white" opacity="0.5"/>`;
+      if (shape2 === "rect")   svg += `<rect x="40" y="40" width="20" height="20" fill="white" opacity="0.5"/>`;
+      if (shape2 === "polygon")svg += `<polygon points="50,20 70,80 30,80" fill="white" opacity="0.5"/>`;
+
+      svg += `</svg>`;
+      return svg;
+    }
+
+    const container = document.getElementById("project-list");
+
+    // Render semua proyek
+    projects.forEach(name => {
+      const item = document.createElement("div");
+      item.className = "project-item";
+
+      const iconWrapper = document.createElement("div");
+      iconWrapper.className = "project-icon";
+      iconWrapper.innerHTML = getRandomIconSVG(name); // ← sesuai permintaan pakai innerHTML
+
+      const title = document.createElement("div");
+      title.className = "project-name";
+      title.textContent = name;
+
+      item.appendChild(iconWrapper);
+      item.appendChild(title);
+      container.appendChild(item);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html translate="no" data-theme="dark" lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Icodex</title>
+
+    <link rel="stylesheet" href="src/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="./src/devicon.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="src/tabler-icons.css"
+      type="text/css"
+      media="all"
+    />
+  
+
+    <link rel="stylesheet" href="app.css" type="text/css" media="all" />
+    <style>
+      #editor {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100dvh;
+        max-height: 100dvh;
+        overflow: auto !important;
+        width: 100%;
+      }
+
+      .ace_editor {
+        position: absolute !important;
+      }
+
+      .editor {
+        max-height: 90dvh !important;
+      }
+      .content_left {
+        max-height: 100dvh;
+        overflow: hidden !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar" style="display: none">
+      <div class="container">
+        <span
+          role="button"
+          type="button"
+          aria-label="sidebar-open"
+          class="toggler-menu btn"
+        >
+          <i class="bi bi-list"></i>
+        </span>
+        <span class="page-title">Settings</span>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <span
+          role="button"
+          type="button"
+          aria-label="sidebar-open"
+          class="toggler-menu btn"
+        >
+          <i class="bi bi-list"></i>
+        </span>
+        <div class="pagination-tab landscape-only">
+          <span role="button" class="btn">
+            <i class="icodex icodex-arrow-left"></i>
+          </span>
+          <span role="button" class="btn">
+            <i class="icodex icodex-arrow-right"></i>
+          </span>
+        </div>
+        <ul class="breadcrumb" id="breadcrumb"></ul>
+
+        <div class="toolbar-buttons">
+          <span role="button" class="btn">
+            <i class="icodex icodex-search"></i>
+          </span>
+          <span role="button" class="btn">
+            <i class="icodex icodex-player-play-filled"></i>
+          </span>
+          <span role="button" class="btn landscape-only">
+            <span class="icodex-sidebar-expand"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-0">
+      <div class="main-app">
+        <div class="content-left">
+          <nav class="file-tab_container">
+            <ul class="file-tab_content">
+              <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-html5-plain colored"></i>
+                  <span class="file_name">app.html</span>
+                </a>
+              </li>
+
+              <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-css3-plain colored"></i>
+                  <span class="file_name">style.css</span>
+                </a>
+              </li>
+
+              <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-javascript-plain colored"></i>
+                  <span class="file_name">main.js</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="editor">
+            <div id="editor"></div>
+          </div>
+        </div>
+        <div class="preview-container landscape-only">
+          <div class="preview-header">
+            <div class="pagination-tab landscape-onl">
+              <span role="button" class="btn">
+                <i class="icodex icodex-arrow-left"></i>
+              </span>
+              <span role="button" class="btn">
+                <i class="icodex icodex-arrow-right"></i>
+              </span>
+            </div>
+            <select title="g" class="form-select">
+              <option value="/index.html">index.html</option>
+            </select>
+
+            <span class="btn" role="button"
+              ><i class="icodex icodex-refresh"></i
+            ></span>
+
+            <span class="btn" role="button"
+              ><i class="icodex icodex-prompt"></i
+            ></span>
+          </div>
+          <iframe class="webview" src="preview.html" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--
+<script type="text/javascript" src="/editor/src-noconflict/ace.js"></script>
+<script type="text/javascript" src="/editor/src-noconflict/ext-language_tools.js"></script>
+-->
+
+    <script type="text/javascript" src="/editor/src-noconflict/ace.js"></script>
+    <script
+      type="text/javascript"
+      src="editor/src-noconflict/ext-language_tools.js"
+    ></script>
+
+    <script>
+      const editor = ace.edit('editor');
+      console.log(editor);
+      editor.setTheme('ace/theme/github_dark');
+      editor.session.setMode('ace/mode/html');
+      editor.session.setUseWorker(true);
+      editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableLiveAutocompletion: true,
+        enableSnippets: true,
+        wrap: true,
+        animatedScroll: false,
+        scrollSpeed: 0,
+        fontWeight: 900,
+      });
+
+      console.log();
+      // Memungkinkan scroll hingga satu layar kosong setelah baris terakhir
+
+      editor.session.setTabSize(4); // jumlah spasi per tab
+      editor.session.setUseSoftTabs(true); // true = spasi, false = karakter tab
+
+      const size = 12;
+      const lineHeight = size * 1.5;
+      // ---- BAGIAN PENTING YANG DIMODIFIKASI ----
+      // Gunakan salah satu, bukan keduanya.
+      // Untuk ruang kosong yang cukup terlihat, saya sarankan 0.5 atau 0.75
+      editor.setOption('scrollPastEnd', 0.75); // Mengatur ruang kosong 75% dari tinggi editor
+      // atau jika Anda ingin scroll sampai akhir halaman (satu layar penuh)
+      // editor.setScrollPastEnd(true);
+
+      editor.setFontSize(size);
+      editor.renderer.lineHeight = lineHeight;
+      editor.renderer.updateFontSize();
+
+      // ✅ sinkronkan line-height visual di ace_scroller
+      editor.renderer.scroller.style.lineHeight = `${lineHeight}px`;
+    </script>
+
+    <script>
+      const path = '/src/app.html'; // contoh: ganti ini untuk test
+      const parts = path.replace(/^\/+/, '').split('/');
+
+      // Pemetaan ekstensi ke class icon khusus
+      const iconMap = {
+        css: 'devicon-css3-plain colored',
+        js: 'devicon-javascript-plain colored',
+        html: 'devicon-html5-plain colored',
+        json: 'icon-json',
+        txt: 'icon-txt',
+        md: 'icon-markdown',
+        default: '',
+      };
+
+      let cumulative = '';
+      const links = [];
+
+      parts.forEach((part, index) => {
+        cumulative += '/' + part;
+
+        const list = document.createElement('li');
+        list.className = 'breadcrumb-item';
+        list.dataset.index = index;
+
+        const a = document.createElement('a');
+
+        const isLast = index === parts.length - 1;
+        const isSingle = parts.length === 1;
+
+        if (isLast) {
+          // bagian akhir (file)
+          a.classList.add('last');
+
+          const ext = part.includes('.') ? part.split('.').pop() : '';
+          const iconClass = iconMap[ext] || iconMap.default;
+
+          const icon = document.createElement('i');
+          icon.className = ` ${iconClass}`;
+
+          const span = document.createElement('span');
+          span.textContent = part;
+
+          a.appendChild(icon);
+          a.appendChild(span);
+        } else {
+          // bagian folder
+          a.textContent = part;
+
+          // tambahkan ikon chevron jika bukan satu-satunya elemen
+          if (!isSingle) {
+            const chevron = document.createElement('i');
+            chevron.className = 'icodex icodex-chevron-right';
+            a.appendChild(chevron);
+          }
+        }
+
+        list.appendChild(a);
+        links.push(list);
+      });
+
+      // Sisipkan ke dalam container
+      const container = document.getElementById('breadcrumb');
+
+      document.addEventListener('DOMContentLoaded', e => {
+        links.forEach(link => container.appendChild(link));
+      });
+    </script>
+  </body>
+</html>
