@@ -499,11 +499,7 @@
   color: hsl(--text-muted-hsl) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
+
 
 @media (color-gamut: srgb) {
   html {
@@ -513,6 +509,8 @@
 }
 html,
 body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 100vw;
   height: 100dvh;
   max-height: 100dvh;
@@ -528,6 +526,11 @@ body {
   -webkit-user-select: none;
   user-select: none;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -863,7 +866,8 @@ button {
   width: 100%;
   position: relative;
   height: 100dvh;
-  overflow: hidden;
+  max-height: 100dvh;
+  overflow: hidden!important;
 }
 
 @media (width >= 768px) {
@@ -883,6 +887,19 @@ button {
     max-width: 1024px;
   }
 }
+
+#editor {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100dvh;
+        max-height: 100dvh;
+        overflow: hidden!important;
+        width: 100%;
+      }
 
 .preview-container {
   width: 100%;
