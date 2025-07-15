@@ -1377,7 +1377,7 @@ button {
   font-size: 1rem;
   line-height: calc(1 / 1.5);
   cursor: pointer;
-}
+} 
 
 #dropdown-wrapper-card > .dropdown-sm > li > a:hover {
   background-color: hsl(var(--surface-hover-hsl));

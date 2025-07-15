@@ -1,0 +1,107 @@
+@font-face {
+  font-display: auto;
+  font-family: "lucide-custom";
+  font-style: normal;
+  font-weight: 400;
+  
+  src: url("./lucide-custom.woff2?1751643845981") format("woff2"), url("./lucide-custom.woff?1751643845981") format("woff"), url("./lucide-custom.ttf?1751643845981") format("truetype"), 
+}
+
+.lucide-custom {
+  display: inline-block;
+  font-family: "lucide-custom";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lucide-custom-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.lucide-custom-xs {
+  font-size: 0.75em;
+}
+
+.lucide-custom-sm {
+  font-size: 0.875em;
+}
+
+.lucide-custom-1x {
+  font-size: 1em;
+}
+
+.lucide-custom-2x {
+  font-size: 2em;
+}
+
+.lucide-custom-3x {
+  font-size: 3em;
+}
+
+.lucide-custom-4x {
+  font-size: 4em;
+}
+
+.lucide-custom-5x {
+  font-size: 5em;
+}
+
+.lucide-custom-6x {
+  font-size: 6em;
+}
+
+.lucide-custom-7x {
+  font-size: 7em;
+}
+
+.lucide-custom-8x {
+  font-size: 8em;
+}
+
+.lucide-custom-9x {
+  font-size: 9em;
+}
+
+.lucide-custom-10x {
+  font-size: 10em;
+}
+
+.lucide-custom-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.lucide-custom-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.lucide-custom-pull-left {
+  float: left;
+}
+
+.lucide-custom-pull-right {
+  float: right;
+}
+
+.lucide-custom.lucide-custom-pull-left {
+  margin-right: 0.3em;
+}
+
+.lucide-custom.lucide-custom-pull-right {
+  margin-left: 0.3em;
+}
+
+
+.lucide-custom-search-code::before {
+  content: "\ea01";
+}
+
