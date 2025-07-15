@@ -1,5 +1,5 @@
 .ace_editor.ace_autocomplete {
-  line-height: 1.5em !important;
+  line-height: 1.5rem!important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -608,6 +608,7 @@ button {
   top: 0;
   left: 0;
   z-index: 9999;
+  background-color: hsl(var(--dark-color-hsl) / 1)
 }
 
 :is(.navbar) > .container {
@@ -636,7 +637,7 @@ button {
 }
 
 .toggler-menu > i {
-  line-height: 1 !important;
+  line-height: 1!important;
 }
 
 :is(.navbar) > .container > .breadcrumb {
@@ -730,7 +731,7 @@ button {
   position: fixed;
   z-index: 50;
   left: 0;
-  top: 61px;
+  top: 60.6993px;
   width: 100%;
   max-height: 35px;
   display: flex;
@@ -852,6 +853,7 @@ button {
   max-height: 100dvh;
   margin-top: 0;
   overflow: auto;
+  
 }
 
   #editor {
@@ -863,8 +865,9 @@ button {
         bottom: 0;
         height: 100dvh;
         max-height: 100dvh;
-        overflow: hidden !important;
+        overflow: hidden!important;
         width: 100%;
+        line-height: 1.5;
   }
 
 @media (width <= 767px) {
