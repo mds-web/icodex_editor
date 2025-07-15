@@ -1,0 +1,3928 @@
+﻿@font-face {
+	font-family: "devicon";
+	src: url("fonts/devicon.ttf?iehcku") format("truetype"), url("fonts/devicon.woff?iehcku") format("woff"), url("fonts/devicon.svg?iehcku#devicon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block
+}
+
+[class^=devicon-],
+[class*=" devicon-"] {
+	font-family: "devicon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.devicon-aarch64-line:before {
+	content: ""
+}
+
+.devicon-aarch64-plain:before {
+	content: ""
+}
+
+.devicon-adonisjs-original:before {
+	content: ""
+}
+
+.devicon-adonisjs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-aftereffects-plain:before {
+	content: ""
+}
+
+.devicon-akka-plain:before {
+	content: ""
+}
+
+.devicon-akka-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-algolia-original:before {
+	content: ""
+}
+
+.devicon-algolia-original-wordmark:before {
+	content: ""
+}
+
+.devicon-alpinejs-original:before {
+	content: ""
+}
+
+.devicon-alpinejs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-amazonwebservices-line-wordmark:before {
+	content: ""
+}
+
+.devicon-amazonwebservices-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-anaconda-original:before {
+	content: ""
+}
+
+.devicon-anaconda-original-wordmark:before {
+	content: ""
+}
+
+.devicon-android-plain:before {
+	content: ""
+}
+
+.devicon-android-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-androidstudio-plain:before {
+	content: ""
+}
+
+.devicon-androidstudio-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-angularjs-plain:before {
+	content: ""
+}
+
+.devicon-angularjs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-angularmaterial-plain:before {
+	content: ""
+}
+
+.devicon-angular-plain:before {
+	content: ""
+}
+
+.devicon-angular-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ansible-plain:before {
+	content: ""
+}
+
+.devicon-ansible-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-antdesign-plain:before {
+	content: ""
+}
+
+.devicon-antdesign-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-apacheairflow-plain:before {
+	content: ""
+}
+
+.devicon-apacheairflow-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-apachekafka-original:before {
+	content: ""
+}
+
+.devicon-apachekafka-original-wordmark:before {
+	content: ""
+}
+
+.devicon-apache-line:before {
+	content: ""
+}
+
+.devicon-apache-line-wordmark:before {
+	content: ""
+}
+
+.devicon-apache-plain:before {
+	content: ""
+}
+
+.devicon-apache-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-apachespark-original:before {
+	content: ""
+}
+
+.devicon-apachespark-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-apl-plain:before {
+	content: ""
+}
+
+.devicon-appcelerator-original:before {
+	content: ""
+}
+
+.devicon-appcelerator-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-apple-original:before {
+	content: ""
+}
+
+.devicon-appwrite-plain:before {
+	content: ""
+}
+
+.devicon-appwrite-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-archlinux-plain:before {
+	content: ""
+}
+
+.devicon-archlinux-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-arduino-plain:before {
+	content: ""
+}
+
+.devicon-arduino-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-argocd-plain:before {
+	content: ""
+}
+
+.devicon-argocd-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-astro-plain:before {
+	content: ""
+}
+
+.devicon-astro-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-atom-original:before {
+	content: ""
+}
+
+.devicon-atom-original-wordmark:before {
+	content: ""
+}
+
+.devicon-awk-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-axios-plain:before {
+	content: ""
+}
+
+.devicon-axios-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-azuredevops-plain:before {
+	content: ""
+}
+
+.devicon-azure-plain:before {
+	content: ""
+}
+
+.devicon-azure-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-azuresqldatabase-plain:before {
+	content: ""
+}
+
+.devicon-babel-plain:before {
+	content: ""
+}
+
+.devicon-backbonejs-plain:before {
+	content: ""
+}
+
+.devicon-backbonejs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ballerina-line:before {
+	content: ""
+}
+
+.devicon-ballerina-line-wordmark:before {
+	content: ""
+}
+
+.devicon-ballerina-original:before {
+	content: ""
+}
+
+.devicon-ballerina-original-wordmark:before {
+	content: ""
+}
+
+.devicon-bamboo-original:before {
+	content: ""
+}
+
+.devicon-bamboo-original-wordmark:before {
+	content: ""
+}
+
+.devicon-bash-plain:before {
+	content: ""
+}
+
+.devicon-beats-plain:before {
+	content: ""
+}
+
+.devicon-behance-plain:before {
+	content: ""
+}
+
+.devicon-behance-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-bitbucket-original:before {
+	content: ""
+}
+
+.devicon-bitbucket-original-wordmark:before {
+	content: ""
+}
+
+.devicon-blazor-line:before {
+	content: ""
+}
+
+.devicon-blazor-original:before {
+	content: ""
+}
+
+.devicon-blender-original:before {
+	content: ""
+}
+
+.devicon-blender-original-wordmark:before {
+	content: ""
+}
+
+.devicon-bootstrap-plain:before {
+	content: ""
+}
+
+.devicon-bootstrap-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-bower-line:before {
+	content: ""
+}
+
+.devicon-bower-line-wordmark:before {
+	content: ""
+}
+
+.devicon-bower-plain:before {
+	content: ""
+}
+
+.devicon-bower-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-browserstack-line:before {
+	content: ""
+}
+
+.devicon-browserstack-line-wordmark:before {
+	content: ""
+}
+
+.devicon-browserstack-plain:before {
+	content: ""
+}
+
+.devicon-browserstack-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-bulma-plain:before {
+	content: ""
+}
+
+.devicon-bun-line:before {
+	content: ""
+}
+
+.devicon-bun-plain:before {
+	content: ""
+}
+
+.devicon-cairo-plain:before {
+	content: ""
+}
+
+.devicon-cairo-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-cakephp-plain:before {
+	content: ""
+}
+
+.devicon-cakephp-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-canva-original:before {
+	content: ""
+}
+
+.devicon-capacitor-plain:before {
+	content: ""
+}
+
+.devicon-capacitor-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-carbon-original:before {
+	content: ""
+}
+
+.devicon-cassandra-plain:before {
+	content: ""
+}
+
+.devicon-cassandra-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-centos-plain:before {
+	content: ""
+}
+
+.devicon-centos-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ceylon-plain:before {
+	content: ""
+}
+
+.devicon-ceylon-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-chrome-plain:before {
+	content: ""
+}
+
+.devicon-chrome-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-circleci-plain:before {
+	content: ""
+}
+
+.devicon-circleci-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-clarity-plain:before {
+	content: ""
+}
+
+.devicon-clarity-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-c-line:before {
+	content: ""
+}
+
+.devicon-clion-plain:before {
+	content: ""
+}
+
+.devicon-clion-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-clojure-line:before {
+	content: ""
+}
+
+.devicon-clojurescript-plain:before {
+	content: ""
+}
+
+.devicon-cloudflare-plain:before {
+	content: ""
+}
+
+.devicon-cloudflare-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-cloudflareworkers-plain:before {
+	content: ""
+}
+
+.devicon-cloudflareworkers-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-cmake-plain:before {
+	content: ""
+}
+
+.devicon-cmake-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-codeac-original:before {
+	content: ""
+}
+
+.devicon-codecov-plain:before {
+	content: ""
+}
+
+.devicon-codeigniter-plain:before {
+	content: ""
+}
+
+.devicon-codeigniter-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-codepen-line:before {
+	content: ""
+}
+
+.devicon-codepen-line-wordmark:before {
+	content: ""
+}
+
+.devicon-codepen-original:before {
+	content: ""
+}
+
+.devicon-codepen-original-wordmark:before {
+	content: ""
+}
+
+.devicon-coffeescript-original:before {
+	content: ""
+}
+
+.devicon-coffeescript-original-wordmark:before {
+	content: ""
+}
+
+.devicon-composer-line:before {
+	content: ""
+}
+
+.devicon-composer-line-wordmark:before {
+	content: ""
+}
+
+.devicon-confluence-line:before {
+	content: ""
+}
+
+.devicon-confluence-line-wordmark:before {
+	content: ""
+}
+
+.devicon-confluence-plain:before {
+	content: ""
+}
+
+.devicon-confluence-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-consul-original:before {
+	content: ""
+}
+
+.devicon-consul-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-contao-original:before {
+	content: ""
+}
+
+.devicon-contao-original-wordmark:before {
+	content: ""
+}
+
+.devicon-corejs-original:before {
+	content: ""
+}
+
+.devicon-corejs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-cosmosdb-plain:before {
+	content: ""
+}
+
+.devicon-cosmosdb-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-couchbase-original:before {
+	content: ""
+}
+
+.devicon-couchbase-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-couchdb-plain:before {
+	content: ""
+}
+
+.devicon-couchdb-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-c-plain:before {
+	content: ""
+}
+
+.devicon-cplusplus-line:before {
+	content: ""
+}
+
+.devicon-cplusplus-plain:before {
+	content: ""
+}
+
+.devicon-crystal-line:before {
+	content: ""
+}
+
+.devicon-crystal-line-wordmark:before {
+	content: ""
+}
+
+.devicon-crystal-original:before {
+	content: ""
+}
+
+.devicon-crystal-original-wordmark:before {
+	content: ""
+}
+
+.devicon-csharp-line:before {
+	content: ""
+}
+
+.devicon-csharp-plain:before {
+	content: ""
+}
+
+.devicon-css3-plain:before {
+	content: ""
+}
+
+.devicon-css3-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-cucumber-plain:before {
+	content: ""
+}
+
+.devicon-cucumber-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-cypressio-line:before {
+	content: ""
+}
+
+.devicon-cypressio-line-wordmark:before {
+	content: ""
+}
+
+.devicon-cypressio-plain:before {
+	content: ""
+}
+
+.devicon-cypressio-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-d3js-plain:before {
+	content: ""
+}
+
+.devicon-dart-plain:before {
+	content: ""
+}
+
+.devicon-dart-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-datagrip-plain:before {
+	content: ""
+}
+
+.devicon-datagrip-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-dataspell-plain:before {
+	content: ""
+}
+
+.devicon-dataspell-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-dbeaver-plain:before {
+	content: ""
+}
+
+.devicon-debian-plain:before {
+	content: ""
+}
+
+.devicon-debian-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-denojs-original:before {
+	content: ""
+}
+
+.devicon-denojs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-devicon-line:before {
+	content: ""
+}
+
+.devicon-devicon-line-wordmark:before {
+	content: ""
+}
+
+.devicon-devicon-plain:before {
+	content: ""
+}
+
+.devicon-devicon-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-digitalocean-original:before {
+	content: ""
+}
+
+.devicon-digitalocean-original-wordmark:before {
+	content: ""
+}
+
+.devicon-discordjs-plain:before {
+	content: ""
+}
+
+.devicon-discordjs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-django-plain:before {
+	content: ""
+}
+
+.devicon-django-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-djangorest-line:before {
+	content: ""
+}
+
+.devicon-djangorest-line-wordmark:before {
+	content: ""
+}
+
+.devicon-djangorest-plain:before {
+	content: ""
+}
+
+.devicon-djangorest-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-docker-plain:before {
+	content: ""
+}
+
+.devicon-docker-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-doctrine-line:before {
+	content: ""
+}
+
+.devicon-doctrine-line-wordmark:before {
+	content: ""
+}
+
+.devicon-doctrine-plain:before {
+	content: ""
+}
+
+.devicon-doctrine-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-dotnetcore-plain:before {
+	content: ""
+}
+
+.devicon-dot-net-plain:before {
+	content: ""
+}
+
+.devicon-dot-net-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-dreamweaver-line:before {
+	content: ""
+}
+
+.devicon-dreamweaver-plain:before {
+	content: ""
+}
+
+.devicon-dropwizard-plain:before {
+	content: ""
+}
+
+.devicon-drupal-plain:before {
+	content: ""
+}
+
+.devicon-drupal-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-dynamodb-plain:before {
+	content: ""
+}
+
+.devicon-eclipse-plain:before {
+	content: ""
+}
+
+.devicon-eclipse-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ecto-original:before {
+	content: ""
+}
+
+.devicon-ecto-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-elasticsearch-plain:before {
+	content: ""
+}
+
+.devicon-elasticsearch-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-electron-original:before {
+	content: ""
+}
+
+.devicon-electron-original-wordmark:before {
+	content: ""
+}
+
+.devicon-eleventy-plain:before {
+	content: ""
+}
+
+.devicon-elixir-plain:before {
+	content: ""
+}
+
+.devicon-elixir-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-elm-plain:before {
+	content: ""
+}
+
+.devicon-elm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-emacs-original:before {
+	content: ""
+}
+
+.devicon-embeddedc-plain:before {
+	content: ""
+}
+
+.devicon-embeddedc-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ember-original-wordmark:before {
+	content: ""
+}
+
+.devicon-ember-plain:before {
+	content: ""
+}
+
+.devicon-envoy-plain:before {
+	content: ""
+}
+
+.devicon-envoy-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-erlang-plain:before {
+	content: ""
+}
+
+.devicon-erlang-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-eslint-line:before {
+	content: ""
+}
+
+.devicon-eslint-line-wordmark:before {
+	content: ""
+}
+
+.devicon-eslint-plain:before {
+	content: ""
+}
+
+.devicon-eslint-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-express-original:before {
+	content: ""
+}
+
+.devicon-express-original-wordmark:before {
+	content: ""
+}
+
+.devicon-facebook-plain:before {
+	content: ""
+}
+
+.devicon-fastapi-plain:before {
+	content: ""
+}
+
+.devicon-fastapi-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-fastify-plain:before {
+	content: ""
+}
+
+.devicon-fastify-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-faunadb-line:before {
+	content: ""
+}
+
+.devicon-faunadb-line-wordmark:before {
+	content: ""
+}
+
+.devicon-faunadb-original:before {
+	content: ""
+}
+
+.devicon-faunadb-original-wordmark:before {
+	content: ""
+}
+
+.devicon-feathersjs-original:before {
+	content: ""
+}
+
+.devicon-fedora-plain:before {
+	content: ""
+}
+
+.devicon-figma-plain:before {
+	content: ""
+}
+
+.devicon-filezilla-line:before {
+	content: ""
+}
+
+.devicon-filezilla-line-wordmark:before {
+	content: ""
+}
+
+.devicon-filezilla-plain:before {
+	content: ""
+}
+
+.devicon-filezilla-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-firebase-line:before {
+	content: ""
+}
+
+.devicon-firebase-line-wordmark:before {
+	content: ""
+}
+
+.devicon-firebase-plain:before {
+	content: ""
+}
+
+.devicon-firebase-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-firefox-plain:before {
+	content: ""
+}
+
+.devicon-firefox-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-flask-original:before {
+	content: ""
+}
+
+.devicon-flask-original-wordmark:before {
+	content: ""
+}
+
+.devicon-flutter-plain:before {
+	content: ""
+}
+
+.devicon-fortran-original:before {
+	content: ""
+}
+
+.devicon-foundation-plain:before {
+	content: ""
+}
+
+.devicon-foundation-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-framermotion-original:before {
+	content: ""
+}
+
+.devicon-framermotion-original-wordmark:before {
+	content: ""
+}
+
+.devicon-framework7-original:before {
+	content: ""
+}
+
+.devicon-framework7-original-wordmark:before {
+	content: ""
+}
+
+.devicon-fsharp-plain:before {
+	content: ""
+}
+
+.devicon-gatling-line:before {
+	content: ""
+}
+
+.devicon-gatling-line-wordmark:before {
+	content: ""
+}
+
+.devicon-gatling-original:before {
+	content: ""
+}
+
+.devicon-gatling-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gatsby-original:before {
+	content: ""
+}
+
+.devicon-gatsby-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gazebo-plain:before {
+	content: ""
+}
+
+.devicon-gazebo-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gcc-line:before {
+	content: ""
+}
+
+.devicon-gcc-plain:before {
+	content: ""
+}
+
+.devicon-gentoo-line:before {
+	content: ""
+}
+
+.devicon-gentoo-line-wordmark:before {
+	content: ""
+}
+
+.devicon-gentoo-plain:before {
+	content: ""
+}
+
+.devicon-gentoo-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ghost-original:before {
+	content: ""
+}
+
+.devicon-ghost-original-wordmark:before {
+	content: ""
+}
+
+.devicon-gimp-line:before {
+	content: ""
+}
+
+.devicon-gimp-line-wordmark:before {
+	content: ""
+}
+
+.devicon-gimp-plain:before {
+	content: ""
+}
+
+.devicon-gimp-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gitbook-line:before {
+	content: ""
+}
+
+.devicon-gitbook-line-wordmark:before {
+	content: ""
+}
+
+.devicon-gitbook-original:before {
+	content: ""
+}
+
+.devicon-gitbook-original-wordmark:before {
+	content: ""
+}
+
+.devicon-githubactions-plain:before {
+	content: ""
+}
+
+.devicon-githubcodespaces-plain:before {
+	content: ""
+}
+
+.devicon-github-original:before {
+	content: ""
+}
+
+.devicon-github-original-wordmark:before {
+	content: ""
+}
+
+.devicon-gitlab-plain:before {
+	content: ""
+}
+
+.devicon-gitlab-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-git-plain:before {
+	content: ""
+}
+
+.devicon-git-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gitpod-plain:before {
+	content: ""
+}
+
+.devicon-gitpod-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gitter-plain:before {
+	content: ""
+}
+
+.devicon-gitter-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-godot-plain:before {
+	content: ""
+}
+
+.devicon-godot-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-goland-plain:before {
+	content: ""
+}
+
+.devicon-goland-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-go-line:before {
+	content: ""
+}
+
+.devicon-googlecloud-plain:before {
+	content: ""
+}
+
+.devicon-googlecloud-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-google-plain:before {
+	content: ""
+}
+
+.devicon-google-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-go-original-wordmark:before {
+	content: ""
+}
+
+.devicon-go-plain:before {
+	content: ""
+}
+
+.devicon-gradle-original:before {
+	content: ""
+}
+
+.devicon-gradle-original-wordmark:before {
+	content: ""
+}
+
+.devicon-grafana-line:before {
+	content: ""
+}
+
+.devicon-grafana-line-wordmark:before {
+	content: ""
+}
+
+.devicon-grafana-plain:before {
+	content: ""
+}
+
+.devicon-grafana-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-grails-plain:before {
+	content: ""
+}
+
+.devicon-graphql-plain:before {
+	content: ""
+}
+
+.devicon-graphql-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-groovy-plain:before {
+	content: ""
+}
+
+.devicon-grpc-plain:before {
+	content: ""
+}
+
+.devicon-grunt-line:before {
+	content: ""
+}
+
+.devicon-grunt-line-wordmark:before {
+	content: ""
+}
+
+.devicon-grunt-plain:before {
+	content: ""
+}
+
+.devicon-grunt-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-gulp-plain:before {
+	content: ""
+}
+
+.devicon-hadoop-plain:before {
+	content: ""
+}
+
+.devicon-hadoop-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-handlebars-line:before {
+	content: ""
+}
+
+.devicon-handlebars-line-wordmark:before {
+	content: ""
+}
+
+.devicon-handlebars-original:before {
+	content: ""
+}
+
+.devicon-handlebars-original-wordmark:before {
+	content: ""
+}
+
+.devicon-hardhat-plain:before {
+	content: ""
+}
+
+.devicon-hardhat-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-harvester-original:before {
+	content: ""
+}
+
+.devicon-harvester-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-haskell-plain:before {
+	content: ""
+}
+
+.devicon-haskell-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-haxe-plain:before {
+	content: ""
+}
+
+.devicon-helm-line:before {
+	content: ""
+}
+
+.devicon-helm-original:before {
+	content: ""
+}
+
+.devicon-heroku-original:before {
+	content: ""
+}
+
+.devicon-heroku-original-wordmark:before {
+	content: ""
+}
+
+.devicon-heroku-plain:before {
+	content: ""
+}
+
+.devicon-heroku-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-hibernate-plain:before {
+	content: ""
+}
+
+.devicon-hibernate-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-homebrew-line:before {
+	content: ""
+}
+
+.devicon-homebrew-line-wordmark:before {
+	content: ""
+}
+
+.devicon-homebrew-plain:before {
+	content: ""
+}
+
+.devicon-homebrew-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-html5-plain:before {
+	content: ""
+}
+
+.devicon-html5-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-hugo-plain:before {
+	content: ""
+}
+
+.devicon-hugo-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ie10-original:before {
+	content: ""
+}
+
+.devicon-ifttt-original:before {
+	content: ""
+}
+
+.devicon-illustrator-line:before {
+	content: ""
+}
+
+.devicon-illustrator-plain:before {
+	content: ""
+}
+
+.devicon-influxdb-original:before {
+	content: ""
+}
+
+.devicon-influxdb-original-wordmark:before {
+	content: ""
+}
+
+.devicon-inkscape-plain:before {
+	content: ""
+}
+
+.devicon-inkscape-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-insomnia-plain:before {
+	content: ""
+}
+
+.devicon-insomnia-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-intellij-plain:before {
+	content: ""
+}
+
+.devicon-intellij-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ionic-original:before {
+	content: ""
+}
+
+.devicon-ionic-original-wordmark:before {
+	content: ""
+}
+
+.devicon-jaegertracing-plain:before {
+	content: ""
+}
+
+.devicon-jaegertracing-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jamstack-original:before {
+	content: ""
+}
+
+.devicon-jamstack-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jasmine-original:before {
+	content: ""
+}
+
+.devicon-jasmine-original-wordmark:before {
+	content: ""
+}
+
+.devicon-java-plain:before {
+	content: ""
+}
+
+.devicon-java-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-javascript-plain:before {
+	content: ""
+}
+
+.devicon-jeet-plain:before {
+	content: ""
+}
+
+.devicon-jeet-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jekyll-plain:before {
+	content: ""
+}
+
+.devicon-jekyll-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jenkins-line:before {
+	content: ""
+}
+
+.devicon-jenkins-plain:before {
+	content: ""
+}
+
+.devicon-jest-plain:before {
+	content: ""
+}
+
+.devicon-jetbrains-plain:before {
+	content: ""
+}
+
+.devicon-jetpackcompose-line:before {
+	content: ""
+}
+
+.devicon-jetpackcompose-line-wordmark:before {
+	content: ""
+}
+
+.devicon-jetpackcompose-plain:before {
+	content: ""
+}
+
+.devicon-jetpackcompose-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jiraalign-plain:before {
+	content: ""
+}
+
+.devicon-jiraalign-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jira-plain:before {
+	content: ""
+}
+
+.devicon-jira-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jquery-plain:before {
+	content: ""
+}
+
+.devicon-jquery-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-json-plain:before {
+	content: ""
+}
+
+.devicon-jule-original:before {
+	content: ""
+}
+
+.devicon-jule-original-wordmark:before {
+	content: ""
+}
+
+.devicon-julia-plain:before {
+	content: ""
+}
+
+.devicon-julia-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-junit-line:before {
+	content: ""
+}
+
+.devicon-junit-line-wordmark:before {
+	content: ""
+}
+
+.devicon-junit-plain:before {
+	content: ""
+}
+
+.devicon-junit-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-jupyter-plain:before {
+	content: ""
+}
+
+.devicon-jupyter-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-k3os-line:before {
+	content: ""
+}
+
+.devicon-k3os-line-wordmark:before {
+	content: ""
+}
+
+.devicon-k3os-original:before {
+	content: ""
+}
+
+.devicon-k3os-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-k3s-original:before {
+	content: ""
+}
+
+.devicon-k3s-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-k6-original:before {
+	content: ""
+}
+
+.devicon-kaggle-original:before {
+	content: ""
+}
+
+.devicon-kaggle-original-wordmark:before {
+	content: ""
+}
+
+.devicon-karatelabs-plain:before {
+	content: ""
+}
+
+.devicon-karatelabs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-karma-plain:before {
+	content: ""
+}
+
+.devicon-kdeneon-plain:before {
+	content: ""
+}
+
+.devicon-keras-line:before {
+	content: ""
+}
+
+.devicon-keras-line-wordmark:before {
+	content: ""
+}
+
+.devicon-keras-plain:before {
+	content: ""
+}
+
+.devicon-keras-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-kibana-plain:before {
+	content: ""
+}
+
+.devicon-kibana-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-knexjs-original:before {
+	content: ""
+}
+
+.devicon-knexjs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-knockout-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-kotlin-plain:before {
+	content: ""
+}
+
+.devicon-kotlin-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-krakenjs-plain:before {
+	content: ""
+}
+
+.devicon-krakenjs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ktor-plain:before {
+	content: ""
+}
+
+.devicon-ktor-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-kubernetes-line:before {
+	content: ""
+}
+
+.devicon-kubernetes-line-wordmark:before {
+	content: ""
+}
+
+.devicon-kubernetes-plain:before {
+	content: ""
+}
+
+.devicon-kubernetes-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-labview-plain:before {
+	content: ""
+}
+
+.devicon-labview-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-laravel-line:before {
+	content: ""
+}
+
+.devicon-laravel-line-wordmark:before {
+	content: ""
+}
+
+.devicon-laravel-original:before {
+	content: ""
+}
+
+.devicon-laravel-original-wordmark:before {
+	content: ""
+}
+
+.devicon-latex-original:before {
+	content: ""
+}
+
+.devicon-less-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-linkedin-plain:before {
+	content: ""
+}
+
+.devicon-linkedin-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-linux-plain:before {
+	content: ""
+}
+
+.devicon-liquibase-original:before {
+	content: ""
+}
+
+.devicon-liquibase-original-wordmark:before {
+	content: ""
+}
+
+.devicon-livewire-plain:before {
+	content: ""
+}
+
+.devicon-livewire-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-llvm-plain:before {
+	content: ""
+}
+
+.devicon-lodash-plain:before {
+	content: ""
+}
+
+.devicon-logstash-plain:before {
+	content: ""
+}
+
+.devicon-logstash-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-lua-line:before {
+	content: ""
+}
+
+.devicon-lua-plain:before {
+	content: ""
+}
+
+.devicon-lumen-original:before {
+	content: ""
+}
+
+.devicon-magento-line:before {
+	content: ""
+}
+
+.devicon-magento-line-wordmark:before {
+	content: ""
+}
+
+.devicon-magento-original:before {
+	content: ""
+}
+
+.devicon-magento-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-mariadb-original:before {
+	content: ""
+}
+
+.devicon-mariadb-original-wordmark:before {
+	content: ""
+}
+
+.devicon-markdown-original:before {
+	content: ""
+}
+
+.devicon-materializecss-plain:before {
+	content: ""
+}
+
+.devicon-materialui-plain:before {
+	content: ""
+}
+
+.devicon-matlab-line:before {
+	content: ""
+}
+
+.devicon-matlab-plain:before {
+	content: ""
+}
+
+.devicon-matplotlib-plain:before {
+	content: ""
+}
+
+.devicon-matplotlib-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-maven-plain:before {
+	content: ""
+}
+
+.devicon-maven-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-maya-plain:before {
+	content: ""
+}
+
+.devicon-maya-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-meteor-plain:before {
+	content: ""
+}
+
+.devicon-meteor-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-microsoftsqlserver-line:before {
+	content: ""
+}
+
+.devicon-microsoftsqlserver-line-wordmark:before {
+	content: ""
+}
+
+.devicon-microsoftsqlserver-plain:before {
+	content: ""
+}
+
+.devicon-microsoftsqlserver-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-minitab-plain:before {
+	content: ""
+}
+
+.devicon-mithril-line:before {
+	content: ""
+}
+
+.devicon-mithril-original:before {
+	content: ""
+}
+
+.devicon-mobx-plain:before {
+	content: ""
+}
+
+.devicon-mocha-plain:before {
+	content: ""
+}
+
+.devicon-modx-plain:before {
+	content: ""
+}
+
+.devicon-modx-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-moleculer-original:before {
+	content: ""
+}
+
+.devicon-moleculer-original-wordmark:before {
+	content: ""
+}
+
+.devicon-mongodb-plain:before {
+	content: ""
+}
+
+.devicon-mongodb-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-mongoose-original:before {
+	content: ""
+}
+
+.devicon-mongoose-original-wordmark:before {
+	content: ""
+}
+
+.devicon-moodle-plain:before {
+	content: ""
+}
+
+.devicon-moodle-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-msdos-line:before {
+	content: ""
+}
+
+.devicon-msdos-plain:before {
+	content: ""
+}
+
+.devicon-mysql-original:before {
+	content: ""
+}
+
+.devicon-mysql-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nano-plain:before {
+	content: ""
+}
+
+.devicon-nano-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-neo4j-plain:before {
+	content: ""
+}
+
+.devicon-neo4j-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-neovim-line:before {
+	content: ""
+}
+
+.devicon-neovim-line-wordmark:before {
+	content: ""
+}
+
+.devicon-neovim-plain:before {
+	content: ""
+}
+
+.devicon-neovim-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nestjs-line:before {
+	content: ""
+}
+
+.devicon-nestjs-line-wordmark:before {
+	content: ""
+}
+
+.devicon-nestjs-original:before {
+	content: ""
+}
+
+.devicon-nestjs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-netlify-plain:before {
+	content: ""
+}
+
+.devicon-netlify-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-networkx-line:before {
+	content: ""
+}
+
+.devicon-networkx-line-wordmark:before {
+	content: ""
+}
+
+.devicon-networkx-plain:before {
+	content: ""
+}
+
+.devicon-networkx-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nextjs-line:before {
+	content: ""
+}
+
+.devicon-nextjs-line-wordmark:before {
+	content: ""
+}
+
+.devicon-nextjs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-nextjs-plain:before {
+	content: ""
+}
+
+.devicon-nginx-original:before {
+	content: ""
+}
+
+.devicon-ngrx-plain:before {
+	content: ""
+}
+
+.devicon-nhibernate-line:before {
+	content: ""
+}
+
+.devicon-nhibernate-line-wordmark:before {
+	content: ""
+}
+
+.devicon-nhibernate-plain:before {
+	content: ""
+}
+
+.devicon-nhibernate-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nimble-plain:before {
+	content: ""
+}
+
+.devicon-nim-line:before {
+	content: ""
+}
+
+.devicon-nim-line-wordmark:before {
+	content: ""
+}
+
+.devicon-nim-plain:before {
+	content: ""
+}
+
+.devicon-nim-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nixos-plain:before {
+	content: ""
+}
+
+.devicon-nixos-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nodejs-line:before {
+	content: ""
+}
+
+.devicon-nodejs-line-wordmark:before {
+	content: ""
+}
+
+.devicon-nodejs-plain:before {
+	content: ""
+}
+
+.devicon-nodejs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nodemon-line:before {
+	content: ""
+}
+
+.devicon-nodemon-plain:before {
+	content: ""
+}
+
+.devicon-nodewebkit-line:before {
+	content: ""
+}
+
+.devicon-nodewebkit-line-wordmark:before {
+	content: ""
+}
+
+.devicon-nodewebkit-plain:before {
+	content: ""
+}
+
+.devicon-nodewebkit-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nomad-original:before {
+	content: ""
+}
+
+.devicon-nomad-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-norg-plain:before {
+	content: ""
+}
+
+.devicon-notion-line:before {
+	content: ""
+}
+
+.devicon-notion-plain:before {
+	content: ""
+}
+
+.devicon-npm-original-wordmark:before {
+	content: ""
+}
+
+.devicon-nuget-original:before {
+	content: ""
+}
+
+.devicon-nuget-original-wordmark:before {
+	content: ""
+}
+
+.devicon-numpy-line:before {
+	content: ""
+}
+
+.devicon-numpy-line-wordmark:before {
+	content: ""
+}
+
+.devicon-numpy-plain:before {
+	content: ""
+}
+
+.devicon-numpy-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-nuxtjs-plain:before {
+	content: ""
+}
+
+.devicon-nuxtjs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-oauth-plain:before {
+	content: ""
+}
+
+.devicon-objectivec-plain:before {
+	content: ""
+}
+
+.devicon-ocaml-plain:before {
+	content: ""
+}
+
+.devicon-ocaml-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ohmyzsh-plain:before {
+	content: ""
+}
+
+.devicon-okta-plain:before {
+	content: ""
+}
+
+.devicon-okta-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-openal-plain:before {
+	content: ""
+}
+
+.devicon-openapi-line:before {
+	content: ""
+}
+
+.devicon-openapi-line-wordmark:before {
+	content: ""
+}
+
+.devicon-openapi-plain:before {
+	content: ""
+}
+
+.devicon-openapi-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-opencl-line:before {
+	content: ""
+}
+
+.devicon-opencl-plain:before {
+	content: ""
+}
+
+.devicon-opencv-plain:before {
+	content: ""
+}
+
+.devicon-opencv-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-opengl-plain:before {
+	content: ""
+}
+
+.devicon-openstack-original:before {
+	content: ""
+}
+
+.devicon-openstack-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-opensuse-original:before {
+	content: ""
+}
+
+.devicon-opensuse-original-wordmark:before {
+	content: ""
+}
+
+.devicon-opentelemetry-plain:before {
+	content: ""
+}
+
+.devicon-opentelemetry-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-opera-plain:before {
+	content: ""
+}
+
+.devicon-opera-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-oracle-original:before {
+	content: ""
+}
+
+.devicon-ory-original:before {
+	content: ""
+}
+
+.devicon-ory-original-wordmark:before {
+	content: ""
+}
+
+.devicon-p5js-original:before {
+	content: ""
+}
+
+.devicon-packer-line:before {
+	content: ""
+}
+
+.devicon-packer-line-wordmark:before {
+	content: ""
+}
+
+.devicon-packer-plain:before {
+	content: ""
+}
+
+.devicon-packer-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pandas-line:before {
+	content: ""
+}
+
+.devicon-pandas-line-wordmark:before {
+	content: ""
+}
+
+.devicon-pandas-plain:before {
+	content: ""
+}
+
+.devicon-pandas-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-perl-plain:before {
+	content: ""
+}
+
+.devicon-pfsense-original:before {
+	content: ""
+}
+
+.devicon-pfsense-original-wordmark:before {
+	content: ""
+}
+
+.devicon-phalcon-plain:before {
+	content: ""
+}
+
+.devicon-phoenix-original:before {
+	content: ""
+}
+
+.devicon-phoenix-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-photonengine-plain:before {
+	content: ""
+}
+
+.devicon-photoshop-line:before {
+	content: ""
+}
+
+.devicon-photoshop-plain:before {
+	content: ""
+}
+
+.devicon-php-plain:before {
+	content: ""
+}
+
+.devicon-phpstorm-plain:before {
+	content: ""
+}
+
+.devicon-phpstorm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-playwright-plain:before {
+	content: ""
+}
+
+.devicon-plotly-plain:before {
+	content: ""
+}
+
+.devicon-plotly-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pnpm-plain:before {
+	content: ""
+}
+
+.devicon-pnpm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-podman-plain:before {
+	content: ""
+}
+
+.devicon-podman-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-poetry-plain:before {
+	content: ""
+}
+
+.devicon-polygon-plain:before {
+	content: ""
+}
+
+.devicon-polygon-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-portainer-original:before {
+	content: ""
+}
+
+.devicon-portainer-original-wordmark:before {
+	content: ""
+}
+
+.devicon-postcss-original:before {
+	content: ""
+}
+
+.devicon-postcss-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-postgresql-plain:before {
+	content: ""
+}
+
+.devicon-postgresql-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-postman-plain:before {
+	content: ""
+}
+
+.devicon-postman-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-powershell-plain:before {
+	content: ""
+}
+
+.devicon-premierepro-plain:before {
+	content: ""
+}
+
+.devicon-prisma-original:before {
+	content: ""
+}
+
+.devicon-prisma-original-wordmark:before {
+	content: ""
+}
+
+.devicon-processing-plain:before {
+	content: ""
+}
+
+.devicon-processing-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-prolog-plain:before {
+	content: ""
+}
+
+.devicon-prolog-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-prometheus-line:before {
+	content: ""
+}
+
+.devicon-prometheus-line-wordmark:before {
+	content: ""
+}
+
+.devicon-prometheus-original:before {
+	content: ""
+}
+
+.devicon-prometheus-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-protractor-line:before {
+	content: ""
+}
+
+.devicon-protractor-line-wordmark:before {
+	content: ""
+}
+
+.devicon-protractor-plain:before {
+	content: ""
+}
+
+.devicon-protractor-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pulsar-original:before {
+	content: ""
+}
+
+.devicon-pulsar-original-wordmark:before {
+	content: ""
+}
+
+.devicon-pulumi-plain:before {
+	content: ""
+}
+
+.devicon-pulumi-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-puppeteer-plain:before {
+	content: ""
+}
+
+.devicon-purescript-original:before {
+	content: ""
+}
+
+.devicon-purescript-original-wordmark:before {
+	content: ""
+}
+
+.devicon-putty-plain:before {
+	content: ""
+}
+
+.devicon-pycharm-plain:before {
+	content: ""
+}
+
+.devicon-pycharm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pypi-plain:before {
+	content: ""
+}
+
+.devicon-pypi-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pyscript-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pytest-plain:before {
+	content: ""
+}
+
+.devicon-pytest-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-python-plain:before {
+	content: ""
+}
+
+.devicon-python-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-pytorch-original:before {
+	content: ""
+}
+
+.devicon-pytorch-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-qodana-plain:before {
+	content: ""
+}
+
+.devicon-qodana-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-qt-original:before {
+	content: ""
+}
+
+.devicon-quarkus-plain:before {
+	content: ""
+}
+
+.devicon-quarkus-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-quasar-plain:before {
+	content: ""
+}
+
+.devicon-quasar-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-qwik-plain:before {
+	content: ""
+}
+
+.devicon-qwik-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rabbitmq-original:before {
+	content: ""
+}
+
+.devicon-rabbitmq-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rails-plain:before {
+	content: ""
+}
+
+.devicon-rails-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-railway-line:before {
+	content: ""
+}
+
+.devicon-railway-line-wordmark:before {
+	content: ""
+}
+
+.devicon-railway-original:before {
+	content: ""
+}
+
+.devicon-railway-original-wordmark:before {
+	content: ""
+}
+
+.devicon-rancher-line:before {
+	content: ""
+}
+
+.devicon-rancher-line-wordmark:before {
+	content: ""
+}
+
+.devicon-rancher-original:before {
+	content: ""
+}
+
+.devicon-rancher-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-raspberrypi-line:before {
+	content: ""
+}
+
+.devicon-raspberrypi-line-wordmark:before {
+	content: ""
+}
+
+.devicon-raspberrypi-plain:before {
+	content: ""
+}
+
+.devicon-raspberrypi-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-reach-plain:before {
+	content: ""
+}
+
+.devicon-reactbootstrap-original:before {
+	content: ""
+}
+
+.devicon-reactnavigation-original:before {
+	content: ""
+}
+
+.devicon-react-original:before {
+	content: ""
+}
+
+.devicon-react-original-wordmark:before {
+	content: ""
+}
+
+.devicon-reactrouter-plain:before {
+	content: ""
+}
+
+.devicon-reactrouter-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-readthedocs-line:before {
+	content: ""
+}
+
+.devicon-readthedocs-original:before {
+	content: ""
+}
+
+.devicon-readthedocs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-realm-plain:before {
+	content: ""
+}
+
+.devicon-realm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rect-plain:before {
+	content: ""
+}
+
+.devicon-redhat-plain:before {
+	content: ""
+}
+
+.devicon-redhat-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-redis-plain:before {
+	content: ""
+}
+
+.devicon-redis-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-redux-original:before {
+	content: ""
+}
+
+.devicon-renpy-plain:before {
+	content: ""
+}
+
+.devicon-replit-original:before {
+	content: ""
+}
+
+.devicon-replit-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rider-plain:before {
+	content: ""
+}
+
+.devicon-rider-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-r-line:before {
+	content: ""
+}
+
+.devicon-rocksdb-line:before {
+	content: ""
+}
+
+.devicon-rocksdb-plain:before {
+	content: ""
+}
+
+.devicon-rockylinux-original:before {
+	content: ""
+}
+
+.devicon-rockylinux-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rollup-line:before {
+	content: ""
+}
+
+.devicon-rollup-line-wordmark:before {
+	content: ""
+}
+
+.devicon-rollup-plain:before {
+	content: ""
+}
+
+.devicon-rollup-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ros-original:before {
+	content: ""
+}
+
+.devicon-ros-original-wordmark:before {
+	content: ""
+}
+
+.devicon-r-plain:before {
+	content: ""
+}
+
+.devicon-rspec-line:before {
+	content: ""
+}
+
+.devicon-rspec-line-wordmark:before {
+	content: ""
+}
+
+.devicon-rspec-plain:before {
+	content: ""
+}
+
+.devicon-rspec-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rstudio-plain:before {
+	content: ""
+}
+
+.devicon-rubymine-plain:before {
+	content: ""
+}
+
+.devicon-rubymine-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ruby-plain:before {
+	content: ""
+}
+
+.devicon-ruby-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-rust-line:before {
+	content: ""
+}
+
+.devicon-rust-original:before {
+	content: ""
+}
+
+.devicon-rxjs-plain:before {
+	content: ""
+}
+
+.devicon-safari-line:before {
+	content: ""
+}
+
+.devicon-safari-line-wordmark:before {
+	content: ""
+}
+
+.devicon-safari-plain:before {
+	content: ""
+}
+
+.devicon-safari-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-salesforce-plain:before {
+	content: ""
+}
+
+.devicon-sanity-plain:before {
+	content: ""
+}
+
+.devicon-sass-original:before {
+	content: ""
+}
+
+.devicon-scala-plain:before {
+	content: ""
+}
+
+.devicon-scala-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-scalingo-line:before {
+	content: ""
+}
+
+.devicon-scalingo-line-wordmark:before {
+	content: ""
+}
+
+.devicon-scalingo-plain:before {
+	content: ""
+}
+
+.devicon-scalingo-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-scikitlearn-line:before {
+	content: ""
+}
+
+.devicon-scikitlearn-plain:before {
+	content: ""
+}
+
+.devicon-sdl-plain:before {
+	content: ""
+}
+
+.devicon-selenium-original:before {
+	content: ""
+}
+
+.devicon-sema-original:before {
+	content: ""
+}
+
+.devicon-sema-original-wordmark:before {
+	content: ""
+}
+
+.devicon-sentry-original:before {
+	content: ""
+}
+
+.devicon-sentry-original-wordmark:before {
+	content: ""
+}
+
+.devicon-sequelize-plain:before {
+	content: ""
+}
+
+.devicon-sequelize-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-shopware-original:before {
+	content: ""
+}
+
+.devicon-shopware-original-wordmark:before {
+	content: ""
+}
+
+.devicon-shotgrid-original-wordmark:before {
+	content: ""
+}
+
+.devicon-shotgrid-plain:before {
+	content: ""
+}
+
+.devicon-sketch-line:before {
+	content: ""
+}
+
+.devicon-sketch-line-wordmark:before {
+	content: ""
+}
+
+.devicon-sketch-plain:before {
+	content: ""
+}
+
+.devicon-sketch-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-slack-plain:before {
+	content: ""
+}
+
+.devicon-slack-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-socketio-original:before {
+	content: ""
+}
+
+.devicon-socketio-original-wordmark:before {
+	content: ""
+}
+
+.devicon-solidity-plain:before {
+	content: ""
+}
+
+.devicon-solidjs-plain:before {
+	content: ""
+}
+
+.devicon-solidjs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-sonarqube-line:before {
+	content: ""
+}
+
+.devicon-sonarqube-line-wordmark:before {
+	content: ""
+}
+
+.devicon-sonarqube-original:before {
+	content: ""
+}
+
+.devicon-sonarqube-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-sourcetree-original:before {
+	content: ""
+}
+
+.devicon-sourcetree-original-wordmark:before {
+	content: ""
+}
+
+.devicon-spack-plain:before {
+	content: ""
+}
+
+.devicon-splunk-original-wordmark:before {
+	content: ""
+}
+
+.devicon-spring-original:before {
+	content: ""
+}
+
+.devicon-spring-original-wordmark:before {
+	content: ""
+}
+
+.devicon-spss-plain:before {
+	content: ""
+}
+
+.devicon-spyder-plain:before {
+	content: ""
+}
+
+.devicon-spyder-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-sqlalchemy-plain:before {
+	content: ""
+}
+
+.devicon-sqlalchemy-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-sqldeveloper-plain:before {
+	content: ""
+}
+
+.devicon-sqlite-plain:before {
+	content: ""
+}
+
+.devicon-sqlite-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ssh-original:before {
+	content: ""
+}
+
+.devicon-ssh-original-wordmark:before {
+	content: ""
+}
+
+.devicon-stackoverflow-line:before {
+	content: ""
+}
+
+.devicon-stackoverflow-line-wordmark:before {
+	content: ""
+}
+
+.devicon-stackoverflow-plain:before {
+	content: ""
+}
+
+.devicon-stackoverflow-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-stata-original-wordmark:before {
+	content: ""
+}
+
+.devicon-storybook-plain:before {
+	content: ""
+}
+
+.devicon-storybook-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-streamlit-plain:before {
+	content: ""
+}
+
+.devicon-streamlit-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-stylus-original:before {
+	content: ""
+}
+
+.devicon-subversion-original:before {
+	content: ""
+}
+
+.devicon-subversion-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-supabase-plain:before {
+	content: ""
+}
+
+.devicon-supabase-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-svelte-plain:before {
+	content: ""
+}
+
+.devicon-svelte-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-swagger-plain:before {
+	content: ""
+}
+
+.devicon-swagger-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-swift-plain:before {
+	content: ""
+}
+
+.devicon-swift-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-swiper-original:before {
+	content: ""
+}
+
+.devicon-symfony-original:before {
+	content: ""
+}
+
+.devicon-symfony-original-wordmark:before {
+	content: ""
+}
+
+.devicon-tailwindcss-original:before {
+	content: ""
+}
+
+.devicon-tailwindcss-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-tauri-plain:before {
+	content: ""
+}
+
+.devicon-tauri-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-tensorflow-line:before {
+	content: ""
+}
+
+.devicon-tensorflow-line-wordmark:before {
+	content: ""
+}
+
+.devicon-tensorflow-original:before {
+	content: ""
+}
+
+.devicon-tensorflow-original-wordmark:before {
+	content: ""
+}
+
+.devicon-terraform-plain:before {
+	content: ""
+}
+
+.devicon-terraform-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-tex-original:before {
+	content: ""
+}
+
+.devicon-thealgorithms-plain:before {
+	content: ""
+}
+
+.devicon-thealgorithms-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-threedsmax-plain:before {
+	content: ""
+}
+
+.devicon-threejs-original:before {
+	content: ""
+}
+
+.devicon-threejs-original-wordmark:before {
+	content: ""
+}
+
+.devicon-titaniumsdk-original:before {
+	content: ""
+}
+
+.devicon-tomcat-line:before {
+	content: ""
+}
+
+.devicon-tomcat-line-wordmark:before {
+	content: ""
+}
+
+.devicon-tortoisegit-line:before {
+	content: ""
+}
+
+.devicon-tortoisegit-plain:before {
+	content: ""
+}
+
+.devicon-towergit-plain:before {
+	content: ""
+}
+
+.devicon-towergit-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-traefikmesh-line:before {
+	content: ""
+}
+
+.devicon-traefikmesh-line-wordmark:before {
+	content: ""
+}
+
+.devicon-traefikmesh-original:before {
+	content: ""
+}
+
+.devicon-traefikmesh-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-traefikproxy-line:before {
+	content: ""
+}
+
+.devicon-traefikproxy-line-wordmark:before {
+	content: ""
+}
+
+.devicon-traefikproxy-original:before {
+	content: ""
+}
+
+.devicon-traefikproxy-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-travis-line:before {
+	content: ""
+}
+
+.devicon-travis-line-wordmark:before {
+	content: ""
+}
+
+.devicon-travis-plain:before {
+	content: ""
+}
+
+.devicon-travis-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-trello-line:before {
+	content: ""
+}
+
+.devicon-trello-line-wordmark:before {
+	content: ""
+}
+
+.devicon-trello-plain:before {
+	content: ""
+}
+
+.devicon-trello-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-trpc-plain:before {
+	content: ""
+}
+
+.devicon-trpc-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-twitter-original:before {
+	content: ""
+}
+
+.devicon-typescript-plain:before {
+	content: ""
+}
+
+.devicon-typo3-line:before {
+	content: ""
+}
+
+.devicon-typo3-line-wordmark:before {
+	content: ""
+}
+
+.devicon-typo3-original:before {
+	content: ""
+}
+
+.devicon-typo3-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-ubuntu-plain:before {
+	content: ""
+}
+
+.devicon-ubuntu-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-unifiedmodelinglanguage-plain:before {
+	content: ""
+}
+
+.devicon-unifiedmodelinglanguage-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-unity-line:before {
+	content: ""
+}
+
+.devicon-unity-line-wordmark:before {
+	content: ""
+}
+
+.devicon-unity-plain:before {
+	content: ""
+}
+
+.devicon-unity-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-unix-original:before {
+	content: ""
+}
+
+.devicon-unrealengine-original:before {
+	content: ""
+}
+
+.devicon-unrealengine-original-wordmark:before {
+	content: ""
+}
+
+.devicon-uwsgi-plain:before {
+	content: ""
+}
+
+.devicon-v8-plain:before {
+	content: ""
+}
+
+.devicon-vagrant-plain:before {
+	content: ""
+}
+
+.devicon-vagrant-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vala-plain:before {
+	content: ""
+}
+
+.devicon-vala-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vault-original:before {
+	content: ""
+}
+
+.devicon-vault-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vercel-line:before {
+	content: ""
+}
+
+.devicon-vercel-line-wordmark:before {
+	content: ""
+}
+
+.devicon-vercel-original:before {
+	content: ""
+}
+
+.devicon-vercel-original-wordmark:before {
+	content: ""
+}
+
+.devicon-vertx-line:before {
+	content: ""
+}
+
+.devicon-vertx-line-wordmark:before {
+	content: ""
+}
+
+.devicon-vertx-plain:before {
+	content: ""
+}
+
+.devicon-vertx-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vim-plain:before {
+	content: ""
+}
+
+.devicon-visualbasic-line:before {
+	content: ""
+}
+
+.devicon-visualbasic-plain:before {
+	content: ""
+}
+
+.devicon-visualstudio-line:before {
+	content: ""
+}
+
+.devicon-visualstudio-plain:before {
+	content: ""
+}
+
+.devicon-vitejs-plain:before {
+	content: ""
+}
+
+.devicon-vite-original:before {
+	content: ""
+}
+
+.devicon-vite-original-wordmark:before {
+	content: ""
+}
+
+.devicon-vitess-plain:before {
+	content: ""
+}
+
+.devicon-vitess-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vitest-plain:before {
+	content: ""
+}
+
+.devicon-vscode-plain:before {
+	content: ""
+}
+
+.devicon-vscode-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vsphere-line:before {
+	content: ""
+}
+
+.devicon-vsphere-line-wordmark:before {
+	content: ""
+}
+
+.devicon-vsphere-plain:before {
+	content: ""
+}
+
+.devicon-vsphere-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vuejs-line:before {
+	content: ""
+}
+
+.devicon-vuejs-line-wordmark:before {
+	content: ""
+}
+
+.devicon-vuejs-plain:before {
+	content: ""
+}
+
+.devicon-vuejs-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-vuestorefront-plain:before {
+	content: ""
+}
+
+.devicon-vuetify-line:before {
+	content: ""
+}
+
+.devicon-vuetify-plain:before {
+	content: ""
+}
+
+.devicon-vyper-plain:before {
+	content: ""
+}
+
+.devicon-vyper-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-wasm-original:before {
+	content: ""
+}
+
+.devicon-wasm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-webflow-original:before {
+	content: ""
+}
+
+.devicon-weblate-plain:before {
+	content: ""
+}
+
+.devicon-weblate-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-webpack-plain:before {
+	content: ""
+}
+
+.devicon-webpack-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-webstorm-plain:before {
+	content: ""
+}
+
+.devicon-webstorm-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-windows8-original:before {
+	content: ""
+}
+
+.devicon-windows8-original-wordmark:before {
+	content: ""
+}
+
+.devicon-windows11-original:before {
+	content: ""
+}
+
+.devicon-windows11-original-wordmark:before {
+	content: ""
+}
+
+.devicon-woocommerce-plain:before {
+	content: ""
+}
+
+.devicon-woocommerce-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-wordpress-plain:before {
+	content: ""
+}
+
+.devicon-wordpress-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-xamarin-original:before {
+	content: ""
+}
+
+.devicon-xamarin-original-wordmark:before {
+	content: ""
+}
+
+.devicon-xcode-plain:before {
+	content: ""
+}
+
+.devicon-xd-line:before {
+	content: ""
+}
+
+.devicon-xd-plain:before {
+	content: ""
+}
+
+.devicon-xml-line:before {
+	content: ""
+}
+
+.devicon-xml-plain:before {
+	content: ""
+}
+
+.devicon-yaml-plain:before {
+	content: ""
+}
+
+.devicon-yarn-line:before {
+	content: ""
+}
+
+.devicon-yarn-line-wordmark:before {
+	content: ""
+}
+
+.devicon-yarn-original:before {
+	content: ""
+}
+
+.devicon-yarn-original-wordmark:before {
+	content: ""
+}
+
+.devicon-yii-plain:before {
+	content: ""
+}
+
+.devicon-yii-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-yugabytedb-plain:before {
+	content: ""
+}
+
+.devicon-yugabytedb-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-yunohost-plain:before {
+	content: ""
+}
+
+.devicon-zend-line:before {
+	content: ""
+}
+
+.devicon-zend-line-wordmark:before {
+	content: ""
+}
+
+.devicon-zend-original:before {
+	content: ""
+}
+
+.devicon-zend-original-wordmark:before {
+	content: ""
+}
+
+.devicon-zig-original:before {
+	content: ""
+}
+
+.devicon-zig-plain-wordmark:before {
+	content: ""
+}
+
+.devicon-html5-original.colored,
+.devicon-html5-plain.colored {
+	color: #e34f26
+}
+
+.devicon-css3-original.colored,
+.devicon-css3-plain.colored {
+	color: #1572b6
+}
+
+.devicon-javascript-original.colored,
+.devicon-javascript-plain.colored {
+	color: #f7df1e
+}
+
+.devicon-git-original.colored,
+.devicon-git-plain.colored {
+	color: #f05032
+}
+
+.devicon-markdown-original.colored {
+	color: #000
+}
+
+.devicon-react-original.colored {
+	color: #61dafb
+}
+
+.devicon-typescript-original.colored,
+.devicon-typescript-plain.colored {
+	color: #3178c6
+}
+
+.devicon-webpack-original.colored,
+.devicon-webpack-plain.colored {
+	color: #8dd6f9
+}
+
+.devicon-python-original.colored,
+.devicon-python-plain.colored {
+	color: #3776ab
+}
+
+.devicon-json-original.colored,
+.devicon-json-plain.colored {
+	color: #292929
+}
