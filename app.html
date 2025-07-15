@@ -31,7 +31,7 @@
         bottom: 0;
         height: 100dvh;
         max-height: 100dvh;
-        overflow: auto !important;
+        overflow: hidden!important;
         width: 100%;
       }
 
@@ -39,12 +39,11 @@
         position: absolute !important;
       }
 
-      .editor {
-        max-height: 90dvh !important;
-      }
+      
+      
       .content_left {
         max-height: 100dvh;
-        overflow: hidden !important;
+        overflow: auto!important;
       }
     </style>
   </head>
@@ -97,9 +96,8 @@
     </div>
 
     <div class="container px-0">
-      <div class="main-app">
-        <div class="content-left">
-          <nav class="file-tab_container">
+
+      <nav class="file-tab_container">
             <ul class="file-tab_content">
               <li class="file-tab_items">
                 <a class="file-tab_link">
@@ -121,8 +119,31 @@
                   <span class="file_name">main.js</span>
                 </a>
               </li>
+                            <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-javascript-plain colored"></i>
+                  <span class="file_name">main.js</span>
+                </a>
+              </li>
+              <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-javascript-plain colored"></i>
+                  <span class="file_name">main.js</span>
+                </a>
+              </li>
+              <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-javascript-plain colored"></i>
+                  <span class="file_name">main.js</span>
+                </a>
+              </li>
+
             </ul>
           </nav>
+      <div class="main-app">
+        
+        <div class="content-left">
+          
 
           <div class="editor">
             <div id="editor"></div>
@@ -150,53 +171,55 @@
               ><i class="icodex icodex-prompt"></i
             ></span>
           </div>
-          <iframe class="webview" src="preview.html" frameborder="0"></iframe>
         </div>
       </div>
     </div>
 
+    <!--
+<script type="text/javascript" src="/editor/src-noconflict/ace.js"></script>
+<script type="text/javascript" src="/editor/src-noconflict/ext-language_tools.js"></script>
+-->
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.43.2/ace.js" integrity="sha512-ZIa+FlPaGDSM+lTl9JaxnQvcfma7ETsOHd9Thbhp5u4RX1uYiDNW7XvUrXv4dJSPetXbiTzWilHEkSg4YpmltQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.43.2/ext-language_tools.min.js" integrity="sha512-EQ+HEoGjbA0ClgWGeEtDNxBMlVya9eI6T8o+iLLj0iSyBMvACBzpTe22RAG2tQRuLhEQdm4OsRd1t52jUN8kgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/editor/src-noconflict/ace.js"></script>
+    <script
+      type="text/javascript"
+      src="editor/src-noconflict/ext-language_tools.js"
+    ></script>
 
     <script>
       const editor = ace.edit('editor');
-      console.log(editor);
-      editor.setTheme('ace/theme/github_dark');
-      editor.session.setMode('ace/mode/html');
-      editor.session.setUseWorker(true);
-      editor.setOptions({
-        enableBasicAutocompletion: true,
-        enableLiveAutocompletion: true,
-        enableSnippets: true,
-        wrap: true,
-        animatedScroll: false,
-        scrollSpeed: 0,
-        fontWeight: 900,
-      });
+editor.setTheme('ace/theme/github_dark');
+editor.session.setMode('ace/mode/html');
+editor.session.setUseWorker(true);
+editor.setOptions({
+  enableBasicAutocompletion: true,
+  enableLiveAutocompletion: true,
+  enableSnippets: true,
+  wrap: true,
+  animatedScroll: false,
+  scrollSpeed: 0,
+});
 
-      console.log();
-      // Memungkinkan scroll hingga satu layar kosong setelah baris terakhir
+editor.session.setTabSize(4);
+editor.session.setUseSoftTabs(true);
 
-      editor.session.setTabSize(4); // jumlah spasi per tab
-      editor.session.setUseSoftTabs(true); // true = spasi, false = karakter tab
+const size = 18;
+const lineHeight = size * 1.5;
 
-      const size = 12;
-      const lineHeight = size * 1.5;
-      // ---- BAGIAN PENTING YANG DIMODIFIKASI ----
-      // Gunakan salah satu, bukan keduanya.
-      // Untuk ruang kosong yang cukup terlihat, saya sarankan 0.5 atau 0.75
-      editor.setOption('scrollPastEnd', 0.75); // Mengatur ruang kosong 75% dari tinggi editor
-      // atau jika Anda ingin scroll sampai akhir halaman (satu layar penuh)
-      // editor.setScrollPastEnd(true);
+editor.setOption('scrollPastEnd', 0.75);
+editor.setFontSize(size);
+editor.renderer.lineHeight = lineHeight;
+editor.renderer.updateFontSize();
 
-      editor.setFontSize(size);
-      editor.renderer.lineHeight = lineHeight;
-      editor.renderer.updateFontSize();
+document.getElementById("editor").addEventListener(
+  "wheel",
+  function (e) {
+    e.preventDefault(); // cegah scroll default
+    editor.renderer.scrollBy(0, e.deltaY);
+  },
+  { passive: false }
+);
 
-      // ✅ sinkronkan line-height visual di ace_scroller
-      editor.renderer.scroller.style.lineHeight = `${lineHeight}px`;
     </script>
 
     <script>
