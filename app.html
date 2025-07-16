@@ -48,23 +48,23 @@
           <i class="bi bi-list"></i>
         </span>
         <div class="pagination-tab landscape-only">
-          <span role="button" class="btn">
+          <span aria-label="btn" role="button" class="btn">
             <i class="icodex icodex-arrow-left"></i>
           </span>
-          <span role="button" class="btn">
+          <span aria-label="btn" role="button" class="btn">
             <i class="icodex icodex-arrow-right"></i>
           </span>
         </div>
         <ul class="breadcrumb" id="breadcrumb"></ul>
 
         <div class="toolbar-buttons">
-          <span role="button" class="btn">
+          <span aria-label="btn" role="button" class="btn">
             <i class="icodex icodex-search"></i>
           </span>
-          <span role="button" class="btn">
+          <span aria-label="btn" role="button" class="btn">
             <i class="icodex icodex-player-play-filled"></i>
           </span>
-          <span role="button" class="btn landscape-only">
+          <span aria-label="btn" role="button" class="btn landscape-only">
             <span class="icodex-sidebar-expand"></span>
           </span>
         </div>
@@ -72,7 +72,6 @@
     </div>
 
     <div class="container px-0">
-
       <nav class="file-tab_container">
             <ul class="file-tab_content">
               <li class="file-tab_items">
@@ -116,16 +115,12 @@
 
             </ul>
           </nav>
-      <div class="main-app">
-        
+      <div class="main-app">    
         <div class="content-left">
-          
-
           <div class="editor">
             <div id="editor"></div>
           </div>
-        </div>
-    
+        </div>  
       </div>
     </div>
 
@@ -154,7 +149,7 @@ editor.setOptions({
 editor.session.setTabSize(4);
 editor.session.setUseSoftTabs(true);
 
-const size = 12;
+const size = 18;
 const lineHeight = size * 1.5;
 
 editor.setOption('scrollPastEnd', 0.75);
