@@ -893,6 +893,7 @@ button {
   max-height: 100dvh;
   margin-top: 0;
   overflow: auto;
+  margin-top: 35px;
 }
 
 #editor {
