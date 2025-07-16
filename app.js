@@ -45,7 +45,7 @@ class Navbar {
       title.textContent = pageType.charAt(0).toUpperCase() + pageType.slice(1);
       inner.appendChild(title);
     }
-
+ 
     if (pageType === "editor") {
       // Pagination
       const pagination = document.createElement("div");

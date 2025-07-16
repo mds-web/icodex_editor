@@ -3114,6 +3114,7 @@ var Tooltip = /** @class */ (function () {
             this.isOpen = true;
         }
     };
+    
     Tooltip.prototype.hide = function (e) {
         if (this.isOpen) {
             this.getElement().style.display = "none";

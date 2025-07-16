@@ -2182,7 +2182,7 @@ icodeXFileDropdown.addEventListener("optclick", e => {
         document.dispatchEvent(renameEvent)
         console.log(`File berhasil di-rename dari ${oldPath} → ${newPath}`)
     } else if ("copy-path-file" === clicked.id) {
-        IcodexEditor.plugins.clipboard.copy(node.path)
+        IcodexEditor.plugins?.clipboard?.copy(node.path)
     }
 
 
@@ -3011,7 +3011,7 @@ class ActionBar extends DocumentFragment {
 
 
     
-    Icodex.loadPlugins ??= async function(list = [], basePath = "/plugins") {
+    Icodex.loadPlugins ??= async function(list = [], basePath = "/plugin") {
         for (const file of list) {
             const script = document.createElement("script");
             script.src = `${basePath}/${file}`, script.type = "text/javascript", script.onload = () => {

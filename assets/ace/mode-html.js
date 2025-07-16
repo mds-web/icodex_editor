@@ -2216,7 +2216,7 @@ var HtmlCompletions = function () {
         return elements.map(function (element) {
             return {
                 value: element,
-                meta: "tag",
+                meta: "",
                 score: 1000000
             };
         });
@@ -2269,7 +2269,6 @@ var HtmlCompletions = function () {
     };
 }).call(HtmlCompletions.prototype);
 exports.HtmlCompletions = HtmlCompletions;
-
 });
 
 ace.define("ace/mode/html",["require","exports","module","ace/lib/oop","ace/lib/lang","ace/mode/text","ace/mode/javascript","ace/mode/css","ace/mode/html_highlight_rules","ace/mode/behaviour/xml","ace/mode/folding/html","ace/mode/html_completions","ace/worker/worker_client"], function(require, exports, module){"use strict";
