@@ -125,8 +125,8 @@ const TREE_STORE_NAME = "Tree"
 const APP_SETTINGS_NAME = "Preferences-settings";
 
 
-((global) =>  {
-    "use strict";
+ 
+
 
 
 
@@ -3133,4 +3133,3 @@ const project = [{
 }];
 
 
-})(window)
