@@ -464,11 +464,11 @@ height: 100%;
 .file-item {
 	padding-left: 1rem;
 	padding-right: .75rem;
-	width: calc(100% - 2px);
+	width: 100%;
     display: flex;       /* Gunakan flexbox untuk tata letak horizontal */
     align-items: center; /* Pusatkan secara vertikal */
     line-height: 2rem;
-    margin-left: 2px;
+    margin-left: 0;
     height: 2.5rem;        /* Tinggi tetap untuk item */
     max-height: 2.5rem;
     /* Indentasi dasar jika diperlukan, atau biarkan diatur oleh JS/struktur UL */
