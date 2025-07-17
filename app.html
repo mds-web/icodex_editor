@@ -20,6 +20,11 @@
     />
 
     <link rel="stylesheet" href="app.css" type="text/css" media="all" />
+    <style>
+.ace_indent-guide-active {
+  
+}
+    </style>
   </head>
   <body>
     <!-- <div class="navbar" style="display: none"> -->
@@ -35,8 +40,8 @@
     <!-- <span class="page-title">Settings</span> -->
     <!-- </div> -->
     <!-- </div> -->
-    <div class="main">
-      <div class="file_explorer-drawer">
+    <div id="mainWrapper" class="main">
+      <div class="file_explorer-drawer" id="drawer">
         <div class="drawer-header">
           <div class="drawer-tab">
             <button class="btn" aria-label="toolbar-buttons">
@@ -135,11 +140,9 @@
             </button>
           </div>
         </div>
-        <div class="drawer-body">
-          drawe
-        </div>
+        <div class="drawer-body">drawe</div>
       </div>
-
+<div class="drawer-backdrop" id="backdrop1"></div>
       <div class="content-right">
         <div class="navbar">
           <div class="container">
@@ -148,6 +151,7 @@
               type="button"
               aria-label="sidebar-open"
               class="toggler-menu btn"
+              id="open-drawer"
             >
               <i class="bi bi-list"></i>
             </span>
@@ -228,7 +232,7 @@
         </div>
       </div>
     </div>
-
+<div class="bg-dark"></div>
     <script type="text/javascript" src="assets/ace/ace.js"></script>
     <script
       type="text/javascript"
@@ -268,6 +272,19 @@
         },
         { passive: false }
       );
+
+      document.addEventListener("keydown", (e) => {
+        // const backdrop = document.getElementById("backdrop1");
+        const mainWrapper = document.getElementById('mainWrapper');
+        const drawer = document.getElementById("drawer");
+       if (e.ctrlKey && e.key === "b".toLowerCase()) {
+        drawer.classList.toggle('open');
+        mainWrapper.classList.toggle('open')
+        if (drawer.classList.contains('open')) {
+        
+        }
+       }
+      })
     </script>
 
     <script>
@@ -337,6 +354,10 @@
       document.addEventListener('DOMContentLoaded', e => {
         links.forEach(link => container.appendChild(link));
       });
+      console.info()
+
+      
+      
     </script>
   </body>
 </html>

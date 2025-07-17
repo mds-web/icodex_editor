@@ -1085,6 +1085,7 @@ backdrop-filter: blur(1px);
 		border-color ease-in-out 0.15s,
 		box-shadow ease-in-out 0.15s;
 	border-radius: 0.375rem;
+	
 }
 .project-search-input:focus {
 	border-color:var(--accent);
