@@ -702,10 +702,10 @@ button {
 :is(.breadcrumb .breadcrumb-item) > a {
   text-decoration: none;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   display: inline-flex;
   align-items: center;
-  cursor: default;
+  cursor: pointer;
 }
 :is(.breadcrumb-item) > a.last {
   column-gap: 0.625rem;
@@ -717,14 +717,15 @@ button {
   font-size: 1rem;
   font-weight: 400 !important;
   color: var(--icon-alpha);
+  line-height: 0px;
+  cursor: default;
 }
 
 :is(.toolbar-buttons) {
   display: flex;
-flex: 0 0 auto;
-align-items: center;
-column-gap: 0;
-  
+  flex: 0 0 auto;
+  align-items: center;
+  column-gap: 0;
 }
 
 :where(.toolbar-buttons) > .btn {
@@ -885,8 +886,6 @@ column-gap: 0;
   padding-right: 0;
 }
 
-@media (width <= 767px) {
-}
 .editor {
   margin: 0 0;
   position: relative;
@@ -896,7 +895,7 @@ column-gap: 0;
   max-height: 100dvh;
   margin-top: 0;
   overflow: auto;
-  margin-top: 35px;
+  margin-top: 1rem;
 }
 
 #editor {
@@ -926,8 +925,6 @@ column-gap: 0;
   max-height: 100dvh;
   overflow: hidden !important;
 }
-
-
 
 /*   Dialog   */
 .dialog-overlay {
@@ -1360,14 +1357,12 @@ column-gap: 0;
   border-color: hsl(var(--border-surface-hsl));
 }
 
-
-
-
 .main {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 340px auto;
   width: 100%;
   max-width: 100%;
+  grid-template-rows: none;
 }
 .content-right {
   max-width: calc(100vw - 340px);
@@ -1375,7 +1370,7 @@ column-gap: 0;
 
 .file_explorer-drawer {
   min-width: 0;
-  
+
   min-height: 100dvh;
   background-color: hsl(var(--surface-color-hsl) / 1);
   position: fixed;
@@ -1384,12 +1379,51 @@ column-gap: 0;
   z-index: 10000;
 }
 
+.file_explorer-drawer .drawer-header {
+  width: 100%;
+  height: auto;
+  border-bottom-width: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .375rem;
+padding-block-end: 0.375rem;
+}
+
+.drawer-header .drawer-tab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+ padding-inline-start: calc(var(--gutter-x) * 0.5);
+ padding-inline-end: calc(
+  var(--gutter-x) * .5
+ )
+ 
+}
+
+.drawer-header > .drawer-tab > .btn {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  color: var(--icon-alpha);
+  cursor: pointer;
+}
+
+.file_explorer-drawer > .drawer-body {
+  min-height: 100dvh;
+  max-height: 100dvh;
+  overflow-y: auto;
+  
+
+}
+
 @media (min-width: 768px) {
   body {
     padding-top: 0;
   }
   .navbar {
-  position: relative;
+    position: relative;
   }
   .file_explorer-drawer {
     position: relative;

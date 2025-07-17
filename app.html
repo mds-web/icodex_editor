@@ -18,69 +18,165 @@
       type="text/css"
       media="all"
     />
-  
 
     <link rel="stylesheet" href="app.css" type="text/css" media="all" />
-
   </head>
   <body>
     <!-- <div class="navbar" style="display: none"> -->
-      <!-- <div class="container"> -->
-        <!-- <span -->
-          <!-- role="button" -->
-          <!-- type="button" -->
-          <!-- aria-label="sidebar-open" -->
-          <!-- class="toggler-menu btn" -->
-        <!-- > -->
-          <!-- <i class="bi bi-list"></i> -->
-        <!-- </span> -->
-        <!-- <span class="page-title">Settings</span> -->
-      <!-- </div> -->
+    <!-- <div class="container"> -->
+    <!-- <span -->
+    <!-- role="button" -->
+    <!-- type="button" -->
+    <!-- aria-label="sidebar-open" -->
+    <!-- class="toggler-menu btn" -->
+    <!-- > -->
+    <!-- <i class="bi bi-list"></i> -->
+    <!-- </span> -->
+    <!-- <span class="page-title">Settings</span> -->
+    <!-- </div> -->
     <!-- </div> -->
     <div class="main">
-    <div class="file_explorer-drawer">
-      <div class="drawer-header">
-        n
-      </div>  
-    </div>
-    
-    <div class="content-right">
-    <div class="navbar">
-      <div class="container">
-        <span
-          role="button"
-          type="button"
-          aria-label="sidebar-open"
-          class="toggler-menu btn"
-        >
-          <i class="bi bi-list"></i>
-        </span>
-        <div class="pagination-tab landscape-only">
-          <span aria-label="btn" role="button" class="btn">
-            <i class="icodex icodex-arrow-left"></i>
-          </span>
-          <span aria-label="btn" role="button" class="btn">
-            <i class="icodex icodex-arrow-right"></i>
-          </span>
+      <div class="file_explorer-drawer">
+        <div class="drawer-header">
+          <div class="drawer-tab">
+            <button class="btn" aria-label="toolbar-buttons">
+              <svg
+                class="lucide lucide-send-horizontal"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"
+                />
+                <path d="M6 12h16" />
+              </svg>
+            </button>
+            <button class="btn" aria-label="toolbar-buttons">
+              <svg
+                class="lucide lucide-folder"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                />
+              </svg>
+            </button>
+            <button class="btn" aria-label="toolbar-buttons">
+              <svg
+                class="lucide lucide-search-code"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m13 13.5 2-2.5-2-2.5" />
+                <path d="m21 21-4.3-4.3" />
+                <path d="M9 8.5 7 11l2 2.5" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+            </button>
+            <button class="btn" aria-label="toolbar-buttons">
+              <svg
+                class="lucide lucide-bell"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                <path
+                  d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+                />
+              </svg>
+            </button>
+            <button class="btn" aria-label="toolbar-buttons">
+              <svg
+                class="lucide lucide-settings"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <ul class="breadcrumb" id="breadcrumb"></ul>
-
-        <div class="toolbar-buttons">
-          <span aria-label="btn" role="button" class="btn">
-            <i class="icodex icodex-search"></i>
-          </span>
-          <span aria-label="btn" role="button" class="btn">
-            <i class="icodex icodex-player-play-filled"></i>
-          </span>
-          <span aria-label="btn" role="button" class="btn landscape-only">
-            <span class="icodex-sidebar-expand"></span>
-          </span>
+        <div class="drawer-body">
+          drawe
         </div>
       </div>
-    </div>
 
-    <div class="container px-0">
-      <nav class="file-tab_container">
+      <div class="content-right">
+        <div class="navbar">
+          <div class="container">
+            <span
+              role="button"
+              type="button"
+              aria-label="sidebar-open"
+              class="toggler-menu btn"
+            >
+              <i class="bi bi-list"></i>
+            </span>
+            <div class="pagination-tab landscape-only">
+              <span aria-label="btn" role="button" class="btn">
+                <i class="icodex icodex-arrow-left"></i>
+              </span>
+              <span aria-label="btn" role="button" class="btn">
+                <i class="icodex icodex-arrow-right"></i>
+              </span>
+            </div>
+            <ul class="breadcrumb" id="breadcrumb"></ul>
+
+            <div class="toolbar-buttons">
+              <span aria-label="btn" role="button" class="btn">
+                <i class="icodex icodex-search"></i>
+              </span>
+              <span aria-label="btn" role="button" class="btn">
+                <i class="icodex icodex-player-play-filled"></i>
+              </span>
+              <span aria-label="btn" role="button" class="btn landscape-only">
+                <span class="icodex-sidebar-expand"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container px-0">
+          <nav class="file-tab_container">
             <ul class="file-tab_content">
               <li class="file-tab_items">
                 <a class="file-tab_link">
@@ -102,12 +198,6 @@
                   <span class="file_name">main.js</span>
                 </a>
               </li>
-                            <li class="file-tab_items">
-                <a class="file-tab_link">
-                  <i class="devicon devicon-javascript-plain colored"></i>
-                  <span class="file_name">main.js</span>
-                </a>
-              </li>
               <li class="file-tab_items">
                 <a class="file-tab_link">
                   <i class="devicon devicon-javascript-plain colored"></i>
@@ -120,20 +210,24 @@
                   <span class="file_name">main.js</span>
                 </a>
               </li>
- 
+              <li class="file-tab_items">
+                <a class="file-tab_link">
+                  <i class="devicon devicon-javascript-plain colored"></i>
+                  <span class="file_name">main.js</span>
+                </a>
+              </li>
             </ul>
           </nav>
-      <div class="main-app">    
-        <div class="content-left">
-          <div class="editor">
-            <div id="editor"></div>
+          <div class="main-app">
+            <div class="content-left">
+              <div class="editor">
+                <div id="editor"></div>
+              </div>
+            </div>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
-    </div>
-    </div>
- 
 
     <script type="text/javascript" src="assets/ace/ace.js"></script>
     <script
@@ -143,38 +237,37 @@
 
     <script>
       const editor = ace.edit('editor');
-editor.setTheme('ace/theme/github_dark');
-editor.session.setMode('ace/mode/html');
-editor.session.setUseWorker(true);
-editor.setOptions({
-  enableBasicAutocompletion: true,
-  enableLiveAutocompletion: true,
-  enableSnippets: true,
-  wrap: true,
-  animatedScroll: false,
-  scrollSpeed: 0,
-});
+      editor.setTheme('ace/theme/github_dark');
+      editor.session.setMode('ace/mode/html');
+      editor.session.setUseWorker(true);
+      editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableLiveAutocompletion: true,
+        enableSnippets: true,
+        wrap: true,
+        animatedScroll: false,
+        scrollSpeed: 0,
+      });
 
-editor.session.setTabSize(4);
-editor.session.setUseSoftTabs(true);
+      editor.session.setTabSize(4);
+      editor.session.setUseSoftTabs(true);
 
-const size = 14;
-const lineHeight = size * 1.5;
+      const size = 14;
+      const lineHeight = size * 1.5;
 
-editor.setOption('scrollPastEnd', 0.75);
-editor.setFontSize(size);
-editor.renderer.lineHeight = lineHeight;
-editor.renderer.updateFontSize();
+      editor.setOption('scrollPastEnd', 0.75);
+      editor.setFontSize(size);
+      editor.renderer.lineHeight = lineHeight;
+      editor.renderer.updateFontSize();
 
-document.getElementById("editor").addEventListener(
-  "wheel",
-  function (e) {
-    e.preventDefault(); // cegah scroll default
-    editor.renderer.scrollBy(0, e.deltaY);
-  },
-  { passive: false }
-);
-
+      document.getElementById('editor').addEventListener(
+        'wheel',
+        function (e) {
+          e.preventDefault(); // cegah scroll default
+          editor.renderer.scrollBy(0, e.deltaY);
+        },
+        { passive: false }
+      );
     </script>
 
     <script>
