@@ -1081,7 +1081,7 @@ backdrop-filter: blur(1px);
 	font-size: 1rem;
 	line-height: 1.5;
 	border: 1px solid var(--border-color);
-	transition:
+	transition: 
 		border-color ease-in-out 0.15s,
 		box-shadow ease-in-out 0.15s;
 	border-radius: 0.375rem;

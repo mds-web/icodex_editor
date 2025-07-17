@@ -24756,7 +24756,7 @@ ace.define(
       this.updateSelectionMarkers = function () {
         this.renderer.updateCursor();
         this.renderer.updateBackMarkers();
-      };
+      }; 
       this.addSelectionMarker = function (orientedRange) {
         if (!orientedRange.cursor) orientedRange.cursor = orientedRange.end;
         var style = this.getSelectionStyle();

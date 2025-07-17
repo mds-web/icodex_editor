@@ -11,7 +11,7 @@ var clipboard = require("./clipboard");
 var VARIABLES = {
     CURRENT_WORD: function (editor) {
         return editor.session.getTextRange(editor.session.getWordRange());
-    },
+    }, 
     SELECTION: function (editor, name, indentation) {
         var text = editor.session.getTextRange();
         if (indentation)
