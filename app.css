@@ -661,6 +661,7 @@ button {
   margin-right: auto;
   flex-wrap: nowrap;
   column-gap: 0.5rem;
+  min-width: 0;
 }
 
 .toggler-menu {
@@ -680,12 +681,13 @@ button {
   line-height: 1 !important;
 }
 
-:is(.navbar) > .container > .breadcrumb {
+:where(.navbar) > .container > .breadcrumb {
   flex: 1 1 0;
   white-space: nowrap;
   display: flex;
   align-items: center;
   min-width: 0;
+  max-width: 100%;
   border-width: 0;
   overflow-x: scroll;
   scrollbar-width: none;
@@ -719,9 +721,10 @@ button {
 
 :is(.toolbar-buttons) {
   display: flex;
-  flex: 0 0 auto;
-  align-items: center;
-  column-gap: 0;
+flex: 0 0 auto;
+align-items: center;
+column-gap: 0;
+  
 }
 
 :where(.toolbar-buttons) > .btn {
@@ -923,6 +926,8 @@ button {
   max-height: 100dvh;
   overflow: hidden !important;
 }
+
+
 
 /*   Dialog   */
 .dialog-overlay {
@@ -1353,4 +1358,40 @@ button {
 #dropdown-wrapper-card > .dropdown-sm > * + * {
   border-top-width: 1px;
   border-color: hsl(var(--border-surface-hsl));
+}
+
+
+
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  max-width: 100%;
+}
+.content-right {
+  max-width: calc(100vw - 340px);
+}
+
+.file_explorer-drawer {
+  min-width: 0;
+  
+  min-height: 100dvh;
+  background-color: hsl(var(--surface-color-hsl) / 1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+  .navbar {
+  position: relative;
+  }
+  .file_explorer-drawer {
+    position: relative;
+  }
 }
