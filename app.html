@@ -140,7 +140,36 @@
             </button>
           </div>
         </div>
-        <div class="drawer-body">drawe</div>
+        <div class="drawer-body">
+          <div id="treeview" class="treeView">
+         <div class="treeView-header">
+  <span class="_title">
+    Files 
+  </span>         
+  <button aria-label="search code" class="btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+  </button>
+    
+    <button aria-label="search code" class="btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+  </button>
+  
+    <button aria-label="search code" class="btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M3.5 2a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V4.707L9.293 2zM2 2.5A1.5 1.5 0 0 1 3.5 1h6a.5.5 0 0 1 .354.146l2.926 2.927c.141.14.22.332.22.53V12.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 2 12.5zm2.75 5a.5.5 0 0 1 .5-.5H7V5.25a.5.5 0 0 1 1 0V7h1.75a.5.5 0 0 1 0 1H8v1.75a.5.5 0 0 1-1 0V8H5.25a.5.5 0 0 1-.5-.5" clip-rule="evenodd" stroke-width="0.5" stroke="currentColor"/></svg>
+  </button>
+
+   
+    <button aria-label="search code" class="btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10v6"/><path d="M9 13h6"/><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+
+  </button>
+
+    <button aria-label="search code" class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="ic-three-dots" viewBox="0 0 16 16"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/></svg>
+    </button>
+         </div> 
+          </div>
+        </div>
       </div>
 <div class="drawer-backdrop" id="backdrop1"></div>
       <div class="content-right">
@@ -155,7 +184,7 @@
             >
               <i class="bi bi-list"></i>
             </span>
-            <div class="pagination-tab landscape-only">
+            <div class="pagination-tab">
               <span aria-label="btn" role="button" class="btn">
                 <i class="icodex icodex-arrow-left"></i>
               </span>
@@ -172,7 +201,7 @@
               <span aria-label="btn" role="button" class="btn">
                 <i class="icodex icodex-player-play-filled"></i>
               </span>
-              <span aria-label="btn" role="button" class="btn landscape-only">
+              <span aria-label="btn" role="button" class="btn">
                 <span class="icodex-sidebar-expand"></span>
               </span>
             </div>
@@ -253,6 +282,7 @@
         scrollSpeed: 0,
       });
 
+
       editor.session.setTabSize(4);
       editor.session.setUseSoftTabs(true);
 
@@ -273,10 +303,19 @@
         { passive: false }
       );
 
+      const backdrop = document.getElementById("backdrop1");
+      const toggler = document.getElementById('open-drawer')
+      const drawer = document.getElementById("drawer");
+
+      const mainWrapper = document.getElementById('mainWrapper');
+      toggler.addEventListener('click', function() {
+      drawer.classList.toggle('open');
+mainWrapper.classList.toggle('open')  
+      })
+
       document.addEventListener("keydown", (e) => {
         // const backdrop = document.getElementById("backdrop1");
-        const mainWrapper = document.getElementById('mainWrapper');
-        const drawer = document.getElementById("drawer");
+        
        if (e.ctrlKey && e.key === "b".toLowerCase()) {
         drawer.classList.toggle('open');
         mainWrapper.classList.toggle('open')

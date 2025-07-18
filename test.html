@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TreeView Settings Global</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .tree-node { margin-left: var(--indent); }
+    .tree-container { border: 1px solid #ccc; padding: 10px; margin-top: 20px; }
+    label { display: block; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1 id="title"></h1>
+  <div id="settings-panel"></div>
+
+  <h2 id="tree-title"></h2>
+  <div id="tree-container" class="tree-container"></div>
+
+  <script>
+    // 1. SETTINGS GLOBAL
+    class SettingsStore extends EventTarget {
+      constructor() {
+        super();
+        const saved = localStorage.getItem('treeSettings');
+        this.settings = saved ? JSON.parse(saved) : {
+          indentSize: 20,
+          language: 'id'
+        };
+      }
+
+      get(key) {
+        return this.settings[key];
+      }
+
+      set(key, value) {
+        this.settings[key] = value;
+        localStorage.setItem('treeSettings', JSON.stringify(this.settings));
+        this.dispatchEvent(new CustomEvent('change', { detail: { key, value } }));
+      }
+    }
+
+    // Tambahkan ke window agar bisa diakses global
+    window.settingsStore = new SettingsStore();
+  </script>
+
+  <script>
+    // 2. LANGUAGE MANAGER
+    const translations = {
+      id: {
+        title: 'Pengaturan TreeView',
+        treeTitle: 'Tampilan TreeView',
+        indent: 'Ukuran indentasi (px):',
+        language: 'Bahasa:'
+      },
+      en: {
+        title: 'TreeView Settings',
+        treeTitle: 'TreeView Display',
+        indent: 'Indent size (px):',
+        language: 'Language:'
+      },
+      jp: {
+        title: 'TreeView 設定',
+        treeTitle: 'TreeView 表示',
+        indent: 'インデントサイズ (px):',
+        language: '言語:'
+      },
+      kr: {
+        title: '트리뷰 설정',
+        treeTitle: '트리뷰 보기',
+        indent: '들여쓰기 크기 (px):',
+        language: '언어:'
+      }
+    };
+
+    class LanguageManager {
+      static getText(key) {
+        const lang = window.settingsStore.get('language');
+        return translations[lang]?.[key] || key;
+      }
+    }
+  </script>
+
+  <script>
+    // 3. SETTINGS PAGE
+    class SettingsPage {
+      constructor(container) {
+        this.container = container;
+        this.render();
+
+        // update saat bahasa diubah
+        window.settingsStore.addEventListener('change', (e) => {
+          if (e.detail.key === 'language') this.render();
+        });
+      }
+
+      render() {
+        this.container.innerHTML = '';
+
+        // Input indentasi
+        const labelIndent = document.createElement('label');
+        labelIndent.textContent = LanguageManager.getText('indent');
+
+        const inputIndent = document.createElement('input');
+        inputIndent.type = 'number';
+        inputIndent.min = 0;
+        inputIndent.value = window.settingsStore.get('indentSize');
+        inputIndent.addEventListener('input', () => {
+          window.settingsStore.set('indentSize', parseInt(inputIndent.value));
+        });
+        labelIndent.appendChild(inputIndent);
+
+        // Pilih bahasa
+        const labelLang = document.createElement('label');
+        labelLang.textContent = LanguageManager.getText('language');
+
+        const selectLang = document.createElement('select');
+        ['id', 'en', 'jp', 'kr'].forEach(code => {
+          const option = document.createElement('option');
+          option.value = code;
+          option.textContent = code.toUpperCase();
+          if (code === window.settingsStore.get('language')) {
+            option.selected = true;
+          }
+          selectLang.appendChild(option);
+        });
+
+        selectLang.addEventListener('change', () => {
+          window.settingsStore.set('language', selectLang.value);
+        });
+
+        labelLang.appendChild(selectLang);
+        this.container.append(labelIndent, labelLang);
+      }
+    }
+  </script>
+
+  <script>
+    // 4. TREEVIEW CLASS
+    class TreeView {
+      constructor(container, data) {
+        this.container = container;
+        this.data = data;
+        this.render();
+
+        window.settingsStore.addEventListener('change', (e) => {
+          if (e.detail.key === 'indentSize' || e.detail.key === 'language') {
+            this.render();
+          }
+        });
+      }
+
+      render() {
+        this.container.innerHTML = '';
+        const indent = window.settingsStore.get('indentSize');
+        this.container.style.setProperty('--indent', `${indent}px`);
+        this.renderNode(this.data, this.container, 0);
+      }
+
+      renderNode(node, parent, level) {
+        const div = document.createElement('div');
+        div.className = 'tree-node';
+        div.textContent = node.name;
+        div.style.marginLeft = `${level * window.settingsStore.get('indentSize')}px`;
+        parent.appendChild(div);
+
+        if (node.children) {
+          for (const child of node.children) {
+            this.renderNode(child, parent, level + 1);
+          }
+        }
+      }
+    }
+  </script>
+
+  <script>
+    // 5. INITIALIZE SEMUANYA
+    document.addEventListener('DOMContentLoaded', () => {
+      const $title = document.getElementById('title');
+      const $treeTitle = document.getElementById('tree-title');
+
+      function updateTexts() {
+        $title.textContent = LanguageManager.getText('title');
+        $treeTitle.textContent = LanguageManager.getText('treeTitle');
+      }
+
+      updateTexts();
+
+      window.settingsStore.addEventListener('change', (e) => {
+        if (e.detail.key === 'language') updateTexts();
+      });
+
+      new SettingsPage(document.getElementById('settings-panel'));
+
+      const treeData = {
+        name: 'root',
+        children: [
+          { name: 'src', children: [
+            { name: 'main.js' },
+            { name: 'style.css' }
+          ] },
+          { name: 'README.md' }
+        ]
+      };
+
+      new TreeView(document.getElementById('tree-container'), treeData);
+    });
+  </script>
+
+</body>
+</html>

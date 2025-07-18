@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+	<button class="button" type="submit">klik</button>
+
+<script type="text/javascript" charset="utf-8">
+window.text = 'klik'
+
+	const btn = document.querySelector('button')
+	btn.innerHTML = window.text
+	btn.addEventListener('click', () => {
+		window.text = "oke"
+		btn.innerHTML =  text
+	})
+</script>
+</body>
+
+</html>

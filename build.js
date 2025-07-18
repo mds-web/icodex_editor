@@ -1273,7 +1273,7 @@ TreeView.prototype.headerTools = function headerTools() {
         onClick: () => alert('Refresh'),
       },
     ],
-  });
+  }); 
 
   iconsActions.forEach((item, i) => {
     if (typeof item === 'string') {
