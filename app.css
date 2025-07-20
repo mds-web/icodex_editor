@@ -651,7 +651,7 @@ button {
   background-color: hsl(var(--dark-color-hsl) / 1);
 }
 
-:is(.navbar) > .container {
+:where(.navbar) > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -662,6 +662,7 @@ button {
   flex-wrap: nowrap;
   column-gap: 0.5rem;
   min-width: 0;
+  
   
 }
 
@@ -722,26 +723,30 @@ button {
   cursor: default;
 }
 
-:is(.toolbar-buttons) {
+:where(.toolbar-buttons) {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
-  column-gap: 0;
+  
+
 }
 
-:where(.toolbar-buttons) > .btn {
-  width: 2rem;
+.toolbar-buttons > .btn {
+  width: 2.5rem;
   height: 2rem;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   border-width: 0px;
   flex-shrink: 0;
+  font-size: 1rem!important;
   text-align: center;
-  margin: 0 0.125rem;
   cursor: pointer;
   transition: border-color ease-in-out .25s, color ease-in-out .25s;
+  
 }
 
+  
 
 
 @media (min-width: 768px) {
@@ -750,13 +755,17 @@ button {
   }
 }
 
-:is(.toolbar-buttons) > .btn:nth-child(2) > i {
-  font-size: 1.375rem!important;
-  width: 2rem;
+:where(.toolbar-buttons) > .btn:nth-child(2) > i {
+
+  font-size: 1.375rem;
   color: mediumseagreen !important;
 }
 
-:is(.toolbar-buttons .btn) > i {
+
+
+
+
+:where(.toolbar-buttons .btn) > i {
   color: var(--icon-alpha);
   font-size: 1.5rem;
 }
@@ -863,7 +872,6 @@ button {
 
 .pagination-tab {
   flex: 0 0 auto;
-  display: flex;
   align-items: center;
   white-space: nowrap;
   min-width: 0;
@@ -1465,6 +1473,18 @@ button {
   cursor: pointer;
 }
 
+.drawer-header > .drawer-tab > .btn > i {
+  font-size: 1.5rem;
+}
+.treeView-header .btn  i {
+	font-size: 1.25rem!important;
+
+}
+.treeView-header .btn:nth-child(6)  i {
+	font-size: 1.625rem!important;
+
+}
+
 .file_explorer-drawer > .drawer-body {
   min-height: 100dvh;
   max-height: 100dvh;
@@ -1503,11 +1523,11 @@ height: 1.5rem!important;
    display: inline-flex;
 }
 
-.treeView-header .btn:nth-child(4) > svg {
+.treeView-header .btn:nth-child(4) > .n {
   width: 1.5rem!important;
   height: 1.5rem!important;
 }
-.treeView-header .btn:nth-child(5) > svg {
+.treeView-header .btn:nth-child(5) > .n {
   width: 1.5rem!important;
   height: 1.5rem!important;
 }
@@ -1555,5 +1575,28 @@ height: 1.5rem!important;
 }
 .md\:only {
   display: none;
+}
+
+
+.d-\[none\] {
+  display: none!important;
+
+}
+
+
+@media (min-width: 768px) {
+  .md\:d-\[none\] {
+    display: none!important;
+  }
+  .md\:d-\[block\] {
+    display: block!important;
+  }
+  .md\:d-\[inline-flex\] {
+    display: inline-flex!important;
+  }
+  .md\:d-\[flex\] {
+    display: flex!important;
+  }
+  
 }
 
