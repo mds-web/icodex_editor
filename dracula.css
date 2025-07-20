@@ -1,0 +1,141 @@
+.ace_editor {
+  font-weight: 400;
+  
+}
+.ace-dracula .ace_gutter {
+color: rgb(144,145,148)
+}
+.ace-dracula .ace_indent-guide {
+border-right: 1px solid #2d363f;
+margin-right: -1px;
+}
+.ace-dracula .ace_dark.ace_editor.ace_autocomplete .ace_completion-highlight {
+color: #57afff;
+}
+.ace-dracula .ace_indent-guide-active {
+border-right-color: #47535f;
+}
+.ace-dracula .ace_print-margin {
+width: 1px;
+background: #2d363f
+}
+.ace-dracula {
+color: #ddd
+}
+.ace-dracula .ace_cursor {
+color: #F8F8F0
+}
+.ace-dracula .ace_marker-layer .ace_selection {
+background: #063e63;
+border-radius: 0;
+}
+.ace-dracula.ace_multiselect .ace_selection.ace_start {
+box-shadow: 0 0 3px black;
+}
+.ace-dracula .ace_marker-layer .ace_step {
+background: rgb(198, 219, 174)
+}
+.ace-dracula .ace_marker-layer .ace_bracket {
+margin: -1px 0 0 -1px;
+border: 1px solid #F8F8F0
+}
+.ace-dracula .ace_marker-layer .ace_active-line {
+background-color: oklab(36.815% -0.00592 -0.02324 / 0.5);
+box-sizing: border-box;
+}
+.ace-dracula .ace_marker-layer .ace_selected-word {
+background-color: rgba(125, 81, 64, 0.8);
+}
+.ace-dracula .ace_invisible {
+color: #52524d
+}
+.ace-dracula .hljs-keyword,
+.ace-dracula .ace_keyword {
+color: #d3a0ff
+}
+.ace-dracula .ace_keyword.ace_operator {
+color: #ddd
+}
+.ace-dracula .ace_constant.ace_language {
+color: #bd93f9
+}
+.ace-dracula .ace_constant.ace_numeric {
+color: #c3e8d1
+}
+.ace-dracula .ace_constant.ace_character {
+color: #bd93f9
+}
+.ace-dracula .ace_constant.ace_character.ace_escape {
+color: #ff79c6
+}
+.ace-dracula .ace_constant.ace_other {
+color: #bd93f9
+}
+.ace-dracula .hljs-title,
+.ace-dracula .ace_identifier {
+color: #aef1ff
+}
+.ace-dracula .ace_support.ace_function {
+color: #57afff
+}
+.ace-dracula .ace_support.ace_constant {
+color: #aef1ff
+}
+.ace-dracula .ace_class {
+color: #1edac1
+}
+.ace-dracula .ace_support.ace_type {
+color: #aef1ff
+}
+.ace-dracula .ace_meta.ace_tag,
+.ace-dracula .ace_comment.ace_doc.ace_tag,
+.ace-dracula .ace_storage {
+color: #57afff
+}
+.ace-dracula .ace_storage.ace_type {
+color: #57afff
+}
+.ace-dracula .ace_invalid {
+color: #F8F8F0;
+background-color: #ff79c6
+}
+.ace-dracula .ace_invalid.ace_deprecated {
+color: #F8F8F0;
+background-color: #bd93f9
+}
+.ace-dracula .ace_string {
+color: #f1fa8c
+}
+.ace-dracula .ace_comment {
+color: #7988b5
+}
+.ace-dracula .ace_constant,
+.ace-dracula .ace_variable {
+color: #a6ffbd
+}
+.ace-dracula .hljs-params,
+.ace-dracula .ace_variable.ace_parameter {
+color: #aef1ff
+}
+.ace-dracula .ace_entity.ace_other.ace_attribute-name {
+color: #aef1ff
+}
+.ace-dracula .ace_entity.ace_name.ace_function {
+color: #fff8d3
+}
+.ace-dracula .ace_xml-pe.ace_xml,
+.ace-dracula .ace_punctuation.ace_tag {
+color: #999
+}
+.ace-dracula .ace_tag-name.ace_tag,
+.ace-dracula .ace_entity.ace_name.ace_tag {
+color: #57afff
+}
+.ace-dracula .ace_heading {
+color: #aef1ff;
+}
+.ace-dracula .ace_markup.ace_list {
+color: #57afff;
+}
+
+/*# sourceURL=ace/css/ace-dracula */

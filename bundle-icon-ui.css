@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icodex-ui-fonts';
-  src: url('./font/icodex-ui-fonts.eot?99389253');
-  src: url('./font/icodex-ui-fonts.eot?99389253#iefix') format('embedded-opentype'),
-       url('./font/icodex-ui-fonts.woff2?99389253') format('woff2'),
-       url('./font/icodex-ui-fonts.woff?99389253') format('woff'),
-       url('./font/icodex-ui-fonts.ttf?99389253') format('truetype'),
-       url('./font/icodex-ui-fonts.svg?99389253#icodex-ui-fonts') format('svg');
+  src: url('./font/icodex-ui-fonts.eot?86185521');
+  src: url('./font/icodex-ui-fonts.eot?86185521#iefix') format('embedded-opentype'),
+       url('./font/icodex-ui-fonts.woff2?86185521') format('woff2'),
+       url('./font/icodex-ui-fonts.woff?86185521') format('woff'),
+       url('./font/icodex-ui-fonts.ttf?86185521') format('truetype'),
+       url('./font/icodex-ui-fonts.svg?86185521#icodex-ui-fonts') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icodex-ui-fonts';
-    src: url('../font/icodex-ui-fonts.svg?99389253#icodex-ui-fonts') format('svg');
+    src: url('../font/icodex-ui-fonts.svg?86185521#icodex-ui-fonts') format('svg');
   }
 }
 */
@@ -28,7 +28,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right:0;
   text-align: center;
   /* opacity: .8; */
 
@@ -52,11 +52,12 @@
 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}  
+}
 
 .icodex-gear:before { content: '\e800'; } /* '' */
+.icodex-folder-plus:before { content: '\e801'; } /* '' */
 .icodex-file-symlink-file:before { content: '\e802'; } /* '' */
-.icodex-file-diff:before { content: '\e803'; }  
+.icodex-file-diff:before { content: '\e803'; } /* '' */
 .icodex-commit:before { content: '\e804'; } /* '' */
 .icodex-chevron-down:before { content: '\e805'; } /* '' */
 .icodex-arrow-right:before { content: '\e806'; } /* '' */
@@ -92,7 +93,6 @@
 .icodex-sidebar-collapse:before { content: '\e824'; } /* '' */
 .icodex-share:before { content: '\e825'; } /* '' */
 .icodex-trash:before { content: '\e826'; } /* '' */
-.icodex-search:before { content: '\e827'; } /* '' */
 .icodex-repo-push:before { content: '\e828'; } /* '' */
 .icodex-repo:before { content: '\e829'; } /* '' */
 .icodex-question:before { content: '\e82a'; } /* '' */
@@ -108,6 +108,6 @@
 .icodex-move-to-end:before { content: '\e834'; } /* '' */
 .icodex-package-dependencies:before { content: '\e835'; } /* '' */
 .icodex-git-pull-request:before { content: '\e836'; } /* '' */
-.icodex-folder-plus:before { content: '\e837'; } /* '' */
 .icodex-three-bars:before { content: '\e838'; } /* '' */
 .icodex-file-added:before { content: '\e839'; } /* '' */
+.icodex-search-2:before { content: '\e83a'; } /* '' */

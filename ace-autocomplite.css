@@ -1,0 +1,49 @@
+.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+  background-color: #cad6fa;
+  z-index: 1;
+}
+.ace_dark.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+  background-color: oklab(57.296% -0.03933 -0.17313 / 0.344);
+}
+.ace_editor.ace_autocomplete .ace_line-hover {
+  border: 1px solid #abbffe;
+  margin-top: -1px;
+  background: oklab(93.997% 0.00736 -0.02596 / 0.4);
+  position: absolute;
+  z-index: 2;
+}
+.ace_dark.ace_editor.ace_autocomplete .ace_line-hover {
+  border: 1px solid  var(--border-color);
+  background:  oklab(36.815% -0.00592 -0.02324 / 0.5);
+}
+.ace_completion-meta {
+  opacity: 0.5;
+  margin: 0.9em;
+}
+.ace_completion-message {
+  color: blue;
+}
+.ace_editor.ace_autocomplete .ace_completion-highlight {
+  color: #2d69c7;
+}
+.ace_dark.ace_editor.ace_autocomplete .ace_completion-highlight {
+  color: #57afff;
+}
+.ace_editor.ace_autocomplete {
+  width: 300px;
+  z-index: 20;
+  border: 1px lightgray solid;
+  position: absolute;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+  background: #fefefe;
+  color: #111;
+}
+.ace_dark.ace_editor.ace_autocomplete {
+  border: 1px #484747 solid;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.51);
+  line-height: 1.4;
+  background: #25282c;
+  color: #c1c1c1;
+}
+/*# sourceURL=ace/css/autocompletion.css */

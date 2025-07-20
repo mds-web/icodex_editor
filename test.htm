@@ -1,0 +1,20 @@
+<!-- Pastikan sudah include Ace Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js"></script>
+<div id="editor" style="height: 400px; width: 100%;"></div>
+<script>
+const htmlString = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>`;
+
+const editor = ace.edit("editor");
+editor.session.setMode("ace/mode/html");
+editor.setValue(htmlString, -1); // -1 agar cursor di awal
+</script>

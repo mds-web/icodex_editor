@@ -1,0 +1,112 @@
+.ace-github-dark .ace_gutter {
+  color: #6e7681;
+}
+.ace-github-dark .ace_indent-guide {
+  border-right: 1px solid #2d363f;
+  margin-right: -1px;
+}
+.ace-github-dark .ace_indent-guide-active {
+  border-right-color: #47535f;
+}
+.ace-github-dark
+  .ace_dark.ace_editor.ace_autocomplete
+  .ace_completion-highlight {
+  color: #61afef;
+}
+.ace-github-dark .ace_print-margin {
+  width: 1px;
+  background: #2d363e;
+}
+.ace-github-dark {
+  color: #ddd;
+}
+.ace-github-dark .ace_cursor {
+  color: #f8f8f0;
+}
+.ace-github-dark .ace_marker-layer .ace_selection {
+  background: #1f4272;
+  border-radius: 0;
+}
+.ace-github-dark.ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px black;
+}
+.ace-github-dark .ace_marker-layer .ace_step {
+  background: rgb(198, 219, 174);
+}
+.ace-github-dark .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid #f8f8f0;
+}
+.ace-github-dark .ace_marker-layer .ace_active-line {
+  background-color: rgba(50, 55, 70, 0.5);
+  box-sizing: border-box;
+}
+.ace-github-dark .ace_marker-layer .ace_selected-word {
+  background-color: rgba(125, 81, 64, 0.8);
+}
+.ace-github-dark .ace_invisible {
+  color: #52524d;
+}
+.ace-github-dark .ace_keyword.ace_operator,
+.ace-github-dark .ace_meta.ace_tag,
+.ace-github-dark .ace_comment.ace_doc.ace_tag,
+.ace-github-dark .ace_storage,
+.ace-github-dark .hljs-keyword,
+.ace-github-dark .ace_keyword {
+  color: #ff7b73;
+}
+.ace-github-dark .ace_paren {
+  color: #efae31;
+}
+.ace-github-dark .ace_constant.ace_character.ace_escape {
+  color: #ff79c5;
+}
+.ace-github-dark .ace_constant.ace_other {
+  color: #bd93f8;
+}
+.ace-github-dark .hljs-title,
+.ace-github-dark .ace_identifier {
+  color: #ebf0f5;
+}
+.ace-github-dark .ace_variable,
+.ace-github-dark .ace_support.ace_function,
+.ace-github-dark .ace_entity.ace_name.ace_function,
+.ace-github-dark .ace_class {
+  color: #d2a8fe;
+}
+.ace-github-dark .ace_invalid {
+  color: #f8f8f0;
+  background-color: #ff79c6;
+}
+.ace-github-dark .ace_invalid.ace_deprecated {
+  color: #f8f8f0;
+  background-color: #bd93f9;
+}
+.ace-github-dark .ace_string {
+  color: #a6d6fe;
+}
+.ace-github-dark .ace_comment {
+  color: #8b949f;
+}
+.ace-github-dark .ace_constant,
+.ace-github-dark .ace_support.ace_type,
+.ace-github-dark .ace_variable.ace_language {
+  color: #79c1fe;
+}
+.ace-github-dark .ace_entity.ace_other.ace_attribute-name {
+  color: #79c1fe;
+}
+.ace-github-dark .hljs-params,
+.ace-github-dark .ace_variable.ace_parameter {
+  color: #ffa658;
+}
+.ace-github-dark .ace_xml-pe.ace_xml,
+.ace-github-dark .ace_punctuation.ace_tag {
+  color: #999;
+}
+.ace-github-dark .ace_tag-name.ace_tag,
+.ace-github-dark .ace_entity.ace_name.ace_tag {
+  color: #7ef788;
+}
+
+/*# sourceURL=ace/css/ace-github-dark */

@@ -18,15 +18,40 @@
       type="text/css"
       media="all"
     />
-
-<link rel="stylesheet" href="src/icon/icodex-ui/css/icodex-ui-fonts.css" type="text/css" media="all" />
-<link rel="stylesheet" href="bundle-icon-ui.css" type="text/css" media="all" />
+<meta name="theme-color" content="#23293c">
+    <link
+      rel="stylesheet"
+      href="src/icon/icodex-ui/css/icodex-ui-fonts.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="bundle-icon-ui.css"
+      type="text/css"
+      media="all"
+    />
     <link rel="stylesheet" href="app.css" type="text/css" media="all" />
     <style>
-.ace_indent-guide-active {
-  
-}
+      .ace_indent-guide-active {
+      }
+
+      .ace_content {
+        border-right: none !important; /* ini garis tengahnya */
+      }
+
+      .ace_print-margin {
+        display: none !important;
+      }
+
+      .ace_indent-guide {
+        background: none !important;
+        display: inline-block;
+        border-right: 1px solid var(--border-color); /* bisa kamu ganti warnanya */
+      }
     </style>
+    <link rel="stylesheet" href="github-dark.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="ace-autocomplite.css" type="text/css" media="all" />
   </head>
   <body>
     <!-- <div class="navbar" style="display: none"> -->
@@ -47,17 +72,16 @@
         <div class="drawer-header">
           <div class="drawer-tab">
             <button class="btn" aria-label="toolbar-buttons">
-<i class="icodex icodex-paper-airplane"></i>            </button>
-            <button class="btn" aria-label="toolbar-buttons">
-<i class="icodex icodex-file-directory"></i>
-
+              <i class="icodex icodex-paper-airplane"></i>
             </button>
             <button class="btn" aria-label="toolbar-buttons">
-<i class="icodex icodex-codescan"></i>
-
+              <i class="icodex icodex-file-directory"></i>
             </button>
             <button class="btn" aria-label="toolbar-buttons">
-<i class="icodex icodex-git-branch"></i>
+              <i class="icodex icodex-codescan"></i>
+            </button>
+            <button class="btn" aria-label="toolbar-buttons">
+              <i class="icodex icodex-git-branch"></i>
             </button>
             <button class="btn" aria-label="toolbar-buttons">
               <i class="icodex icodex-person"></i>
@@ -66,38 +90,33 @@
         </div>
         <div class="drawer-body">
           <div id="treeview" class="treeView">
-         <div class="treeView-header">
-  <span class="_title">
-    Files 
-  </span>         
-  <button aria-label="search code" class="btn">
-<i class="icodex icodex-search"></i>
-  </button>
-    
-    <button aria-label="search code" class="btn">
-<i class="icodex icodex-location"></i>
+            <div class="treeView-header">
+              <span class="_title"> Files </span>
+              <button aria-label="search code" class="btn">
+                <i class="icodex icodex-search"></i>
+              </button>
 
-  </button>
-  
-    <button aria-label="search code" class="btn">
-<i class="icodex icodex-file-added"></i>
-  </button>
+              <button aria-label="search code" class="btn">
+                <i class="icodex icodex-location"></i>
+              </button>
 
-   
-    <button aria-label="search code" class="btn">
-<i class="icodex icodex-folder-plus"></i>
+              <button aria-label="search code" class="btn">
+                <i class="icodex icodex-file-added"></i>
+              </button>
 
-  </button>
+              <button aria-label="search code" class="btn">
+                <i class="icodex icodex-folder-plus"></i>
+              </button>
 
-    <button aria-label="search code" class="btn">
-<i class="icodex icodex-kebab-horizontal"></i>
-    </button>
-         </div> 
+              <button aria-label="search code" class="btn">
+                <i class="icodex icodex-kebab-horizontal"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      
-<div class="drawer-backdrop" id="backdrop1"></div>
+
+      <div class="drawer-backdrop" id="backdrop1"></div>
       <div class="content-right">
         <div class="navbar">
           <div class="container">
@@ -122,13 +141,17 @@
 
             <div class="toolbar-buttons">
               <span aria-label="btn" role="button" class="btn">
-                <i class="icodex icodex-search"></i>
+                <i class="icodex icodex-search-2"></i>
               </span>
               <span aria-label="btn" role="button" class="btn">
-         <i class="tb tb-player-play-filled"></i>
+                <i class="tb tb-player-play-filled"></i>
               </span>
-              <span aria-label="btn" role="button" class="btn d-[none] md:d-[inline-flex]">
-                <span class="icodex-sidebar-expand"></span>
+              <span
+                aria-label="btn"
+                role="button"
+                class="btn d-[none] md:d-[inline-flex]"
+              >
+                <i class="icodex icodex-sidebar-expand"></i>
               </span>
             </div>
           </div>
@@ -187,7 +210,7 @@
         </div>
       </div>
     </div>
-<div class="bg-dark"></div>
+    <div class="bg-dark"></div>
     <script type="text/javascript" src="assets/ace/ace.js"></script>
     <script
       type="text/javascript"
@@ -195,78 +218,153 @@
     ></script>
 
     <script>
-      const editor = ace.edit('editor');
-      editor.setTheme('ace/theme/github_dark');
-      editor.session.setMode('ace/mode/html');
-      editor.session.setUseWorker(true);
-      editor.setOptions({
-        enableBasicAutocompletion: true,
-        enableLiveAutocompletion: true,
-        enableSnippets: true,
-        wrap: true,
-        animatedScroll: false,
-        scrollSpeed: 0,
-      });
+      document.addEventListener('DOMContentLoaded', function () {
+        const editor = ace.edit('editor');
+        editor.setTheme('ace/theme/github');
+        editor.session.setMode('ace/mode/html');
+        editor.session.setUseWorker(true);
+        editor.setOptions({
+          enableBasicAutocompletion: true,
+          enableLiveAutocompletion: true,
+          enableSnippets: true,
+          wrap: true,
+          animatedScroll: false,
+          scrollSpeed: 0,
+        });
 
+        const defaultHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* CSS Default */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
 
-      editor.session.setTabSize(4);
-      editor.session.setUseSoftTabs(true);
+    h1 {
+      color: #333;
+    }
+  <\/style>
+<\/head>
+<body>
+  <h1>Hello World<\/h1>
+  <p>This is a default HTML template with embedded CSS and JavaScript.<\/p>
 
-      const size = 14;
-      const lineHeight = size * 1.5;
+  <script>
+    // JavaScript Default
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('Page loaded');
+    });
+  <\/script>
+<\/body>
+<\/html>`;
+        editor.session.setValue(defaultHTML, -1); // -1 agar cursor di awal
+        editor.session.setTabSize(2);
+        editor.session.setUseSoftTabs(true);
+        // editor.setValue("select your code here", -1); // -1 agar cursor di awal
+        const size = 14;
+        const lineHeight = size * 1.5;
 
-      editor.setOption('scrollPastEnd', 0.75);
-      editor.setFontSize(size);
-      editor.renderer.lineHeight = lineHeight;
-      editor.renderer.updateFontSize();
- 
-      document.getElementById('editor').addEventListener(
-        'wheel',
-        function (e) {
-          e.preventDefault(); // cegah scroll default
-          editor.renderer.scrollBy(0, e.deltaY);
-        },
-        { passive: false }
-      );
+        editor.setOption('scrollPastEnd', 0.75);
+        editor.setFontSize(size);
+        editor.renderer.lineHeight = lineHeight;
+        editor.renderer.updateFontSize();
 
-      const backdrop = document.getElementById("backdrop1");
-      const toggler = document.getElementById('open-drawer')
-      const drawer = document.getElementById("drawer");
+        document.getElementById('editor').addEventListener(
+          'wheel',
+          function (e) {
+            e.preventDefault(); // cegah scroll default
+            editor.renderer.scrollBy(0, e.deltaY);
+          },
+          { passive: false },
+        );
 
-      const mainWrapper = document.getElementById('mainWrapper');
-      toggler.addEventListener('click', function() {
-      drawer.classList.toggle('open');
-      mainWrapper.classList.toggle('open');
-      backdrop.style.display = 'block';
+        const backdrop = document.getElementById('backdrop1');
+        const toggler = document.getElementById('open-drawer');
+        const drawer = document.getElementById('drawer');
+        const mainWrapper = document.getElementById('mainWrapper');
 
-      if (drawer.classList.contains('open')) {
-        backdrop.addEventListener('click', () => {
-          backdrop.style.display = 'none';
-          drawer.classList.remove('open')
-          mainWrapper.classList.remove('open')
-
-        }, { once: true })
-      }
-      })
-
-      document.addEventListener("keydown", (e) => {
-        // const backdrop = document.getElementById("backdrop1");
-        
-       if (e.ctrlKey && e.key === "b".toLowerCase()) {
-        drawer.classList.toggle('open');
-        mainWrapper.classList.toggle('open')
-        backdrop.style.display = 'block';
-
-        if (drawer.classList.contains('open')) {
-        backdrop.addEventListener('click', () => {
-          backdrop.style.display = 'none';
-          drawer.classList.remove('open')
-          mainWrapper.classList.remove('open')
-
-        }, { once: true })
+        function isMobilePlatform() {
+          const ua = navigator.userAgent || navigator.vendor || window.opera;
+          return /android/i.test(ua) || /iPhone|iPad|iPod/i.test(ua);
         }
-       }
-      })
+
+        // backdrop hanya muncul di mobile
+        toggler.addEventListener('click', function () {
+          drawer.classList.toggle('open');
+          mainWrapper.classList.toggle('open');
+          if (drawer.classList.contains('open') && isMobilePlatform()) {
+            backdrop.style.display = 'block';
+          } else {
+            backdrop.style.display = 'none';
+          }
+        });
+
+        backdrop.addEventListener('click', function () {
+          backdrop.style.display = 'none';
+          drawer.classList.remove('open');
+          mainWrapper.classList.remove('open');
+        });
+
+        function getPlatform() {
+          const ua = navigator.userAgent || navigator.vendor || window.opera;
+          const platform = navigator.platform.toLowerCase();
+
+          if (/android/i.test(ua)) {
+            return 'Android';
+          }
+
+          if (/iPhone|iPad|iPod/i.test(ua)) {
+            return 'iOS';
+          }
+
+          if (platform.includes('mac')) {
+            return 'macOS';
+          }
+
+          if (platform.includes('win')) {
+            return 'Windows';
+          }
+
+          if (/linux/.test(platform)) {
+            return 'Linux';
+          }
+
+          return 'Unknown';
+        }
+
+        // Penggunaan:
+        const devicePlatform = getPlatform();
+        console.log('Platform:', devicePlatform);
+
+        document.addEventListener('keydown', e => {
+          // const backdrop = document.getElementById("backdrop1");
+
+          if (e.ctrlKey && e.key === 'b'.toLowerCase()) {
+            drawer.classList.toggle('open');
+            mainWrapper.classList.toggle('open');
+
+            if (drawer.classList.contains('open')) {
+              // tampilkan backdrop
+
+              if (devicePlatform === 'Android' || devicePlatform === 'iOS') {
+                backdrop.style.display = 'block'; // tampilkan backdrop di mobile
+              } else {
+                backdrop.style.display = 'none'; // sembunyikan backdrop di desktop
+              }
+            } else {
+              // sembunyikan backdrop
+              backdrop.style.display = 'none';
+            }
+          }
+        });
+      });
     </script>
 
     <script>
@@ -336,10 +434,10 @@
       document.addEventListener('DOMContentLoaded', e => {
         links.forEach(link => container.appendChild(link));
       });
-      console.info()
-
-      
-      
+      console.info();
+    </script>
+  </body>
+</html>
     </script>
   </body>
 </html>
