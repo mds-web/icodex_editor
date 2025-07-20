@@ -1,5 +1,6 @@
 
 .icon-gear:before { content: '\e800'; } /* '' */
+.icon-icodex-folder-plus:before { content: '\e801'; } /* '' */
 .icon-file-symlink-file:before { content: '\e802'; } /* '' */
 .icon-file-diff:before { content: '\e803'; } /* '' */
 .icon-commit:before { content: '\e804'; } /* '' */
@@ -37,7 +38,6 @@
 .icon-sidebar-collapse:before { content: '\e824'; } /* '' */
 .icon-share:before { content: '\e825'; } /* '' */
 .icon-trash:before { content: '\e826'; } /* '' */
-.icon-search:before { content: '\e827'; } /* '' */
 .icon-repo-push:before { content: '\e828'; } /* '' */
 .icon-repo:before { content: '\e829'; } /* '' */
 .icon-question:before { content: '\e82a'; } /* '' */
@@ -53,6 +53,6 @@
 .icon-move-to-end:before { content: '\e834'; } /* '' */
 .icon-package-dependencies:before { content: '\e835'; } /* '' */
 .icon-git-pull-request:before { content: '\e836'; } /* '' */
-.icon-folder-plus:before { content: '\e837'; } /* '' */
 .icon-three-bars:before { content: '\e838'; } /* '' */
 .icon-file-added:before { content: '\e839'; } /* '' */
+.icon-search-2:before { content: '\e83a'; } /* '' */
